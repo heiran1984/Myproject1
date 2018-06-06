@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/NewOzv"
+        android:title="عضو جدید"/>
+    <item android:id="@+id/variz"
+        android:title="واریز حق عضویت ماهیانه"/>
+    <item android:id="@+id/Ozv"
+        android:title="اعضا"/>
+    <item android:id="@+id/Vam"
+        android:title="وامها"/>
+    <item android:id="@+id/Setting"
+        android:title="تنظیمات"/>
+    <item android:id="@+id/LogOut"
+        android:title="خروج "/>
+</menu>

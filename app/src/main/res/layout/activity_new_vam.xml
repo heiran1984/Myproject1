@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hamed.recyclerviewmysqlvolley.MainActivity"
+    android:layoutDirection="rtl"
+    android:textDirection="rtl"
+    android:padding="10dp"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+           <TextView
+                android:id="@+id/textView"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="وام گیرنده"
+                android:textColor="@android:color/black"/>
+
+        <EditText
+            android:id="@+id/editTextUsername"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/bottom_border"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="مبلغ وام"
+            android:textColor="@android:color/black"
+
+            />
+
+        <EditText
+            android:id="@+id/editTextMVam"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:inputType="number"
+            android:background="@drawable/bottom_border"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="تعداد اقساط"
+            android:textColor="@android:color/black"
+
+            />
+
+        <EditText
+            android:id="@+id/editTAghsat"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="40"
+            android:inputType="number"
+            android:background="@drawable/bottom_border"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="مبلغ هر قسط"
+            android:textColor="@android:color/black"
+            />
+        <EditText
+            android:id="@+id/editMaghsat"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/bottom_border"
+            android:inputType="number"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="مبلغ پرداخت شده"
+            android:textColor="@android:color/black"
+
+            />
+        <EditText
+            android:id="@+id/MPardakhtshoda"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/bottom_border"
+            android:inputType="number"
+            android:text="0"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/buttonNewVam"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/curve_shap"
+            android:text="ایجاد وام  "
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="24sp"/>
+    </LinearLayout>
+
+
+
+</ScrollView>
+
+
+
+
+
+

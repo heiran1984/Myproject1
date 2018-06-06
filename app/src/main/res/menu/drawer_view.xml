@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <group android:id="@+id/grp1" android:checkableBehavior="single">
+        <item android:id="@+id/NewOzv"
+            android:title="عضو جدید"
+            android:icon="@drawable/ic_person_add_black_24dp"/>
+        <item android:id="@+id/variz"
+            android:title="واریز حق عضویت ماهیانه"
+            android:icon="@drawable/ic_credit_card_black_24dp"/>
+        <item android:id="@+id/Ozv"
+            android:title="اعضا"
+            android:icon="@drawable/ic_people_black_24dp"/>
+        <item android:id="@+id/Vam"
+            android:title="وامها"
+            android:icon="@drawable/ic_account_balance_black_24dp"/>
+        <item android:id="@+id/Setting"
+            android:title="تنظیمات"
+            android:icon="@drawable/ic_settings_black_24dp"/>
+        <item android:id="@+id/LogOut"
+            android:title="خروج "
+            android:icon="@drawable/ic_exit_to_app_black_24dp"/>
+
+    </group>
+
+</menu>

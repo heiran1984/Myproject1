@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/new_vam"
+        android:title="وام جدید"/>
+    <item android:id="@+id/mojodi"
+        android:title="افزایش موجودی"/>
+    <item android:id="@+id/edit"
+        android:title="ویرایش"/>
+</menu>
