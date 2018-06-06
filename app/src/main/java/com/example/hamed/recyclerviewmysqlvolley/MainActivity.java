@@ -38,7 +38,7 @@ public class MainActivity extends MyActivity implements NavigationView.OnNavigat
     DecimalFormat formatter=new DecimalFormat("#,###,###");
     ProgressBar progressBar;
     private DrawerLayout mDrawerLayout;
-
+    /*Hello*/
     NavigationView navigationView;
     RelativeLayout.LayoutParams layoutparams;
     private int itemId=-1;
