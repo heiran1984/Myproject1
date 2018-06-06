@@ -56,22 +56,17 @@ public class NewVamActivity extends MyActivity implements View.OnClickListener {
         new  CustomActionBar(this,getSupportActionBar(),"");
 
         editTextUsername=(EditText)findViewById(R.id.editTextUsername);
-       // editTextUsername.setTypeface(typeface);
         editTextMVame=(EditText)findViewById(R.id.editTextMVam);
 
         editTextMVame.addTextChangedListener(new NumberTextWatcher(editTextMVame));
-      //  editTextMVame.setTypeface(typeface);
 
 
         buttonNewVam=(Button)findViewById(R.id.buttonNewVam);
         editTextTAghsat=(EditText)findViewById(R.id.editTAghsat);
         editTextTAghsat.addTextChangedListener(mTextEditorWatcher);
-      //  editTextTAghsat.setTypeface(typeface);
         editTextMAghsat=(EditText)findViewById(R.id.editMaghsat);
-      //  editTextMAghsat.setTypeface(typeface);
 
         editTextMPardakhtshoda=(EditText)findViewById(R.id.MPardakhtshoda);
-      //  editTextMPardakhtshoda.setTypeface(typeface);
         editTextMPardakhtshoda.addTextChangedListener(new NumberTextWatcher(editTextMPardakhtshoda));
 
 
@@ -182,6 +177,7 @@ public class NewVamActivity extends MyActivity implements View.OnClickListener {
                             vam=obj.getInt("mizan")*parseInt(mvam);
                             taghsat=obj.getInt("t_aghsat");
                             editTextMVame.setText(formatter.format(vam));
+                            editTextMVame.addTextChangedListener(mTextEditorWatcher1);
                             editTextTAghsat.setText(formatter.format(taghsat));
                             editTextMAghsat.setText(formatter.format(vam/taghsat));
                             MojodiSandogh=obj.getInt("smojodi");
@@ -227,12 +223,40 @@ public class NewVamActivity extends MyActivity implements View.OnClickListener {
             if(editTextTAghsat.length()!=0) {
                 a = parseInt(editTextMVame.getText().toString().replace(",", ""));
                 String b1 = editTextTAghsat.getText().toString().replace(",", "");
-                  editTextTAghsat.setText(formatter.format(parseInt(b1)));
-            editTextTAghsat.setSelection(editTextTAghsat.getText().length());
-             editTextMAghsat.setText(formatter.format(a / parseInt(b1)));
+                editTextTAghsat.setText(formatter.format(parseInt(b1)));
+                editTextTAghsat.setSelection(editTextTAghsat.getText().length());
+                editTextMAghsat.setText(formatter.format(a / parseInt(b1)));
             }
             editTextTAghsat.addTextChangedListener(this);
 
+
+        }
+    };
+
+    private final TextWatcher mTextEditorWatcher1=new TextWatcher() {
+        @Override
+        public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+        }
+
+        @Override
+        public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+        }
+
+        @Override
+        public void afterTextChanged(Editable s) {
+
+            editTextMVame.removeTextChangedListener(this);
+            int a;
+            if(editTextMVame.length()!=0) {
+                a = parseInt(editTextMVame.getText().toString().replace(",", ""));
+                String b1 = editTextTAghsat.getText().toString().replace(",", "");
+                editTextMVame.setText(formatter.format(a));
+                editTextMVame.setSelection(editTextMVame.getText().length());
+                editTextMAghsat.setText(formatter.format(a / parseInt(b1)));
+            }
+            editTextMVame.addTextChangedListener(this);
 
         }
     };

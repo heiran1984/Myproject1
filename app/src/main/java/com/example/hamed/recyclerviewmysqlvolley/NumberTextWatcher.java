@@ -24,13 +24,10 @@ public class NumberTextWatcher implements TextWatcher {
     public void afterTextChanged(Editable s)
     {
         et.removeTextChangedListener(this);
-        int a,b;
         if(et.length()!=0) {
-          //  a = parseInt(editTextMVame.getText().toString().replace(",", ""));
             String b1 = et.getText().toString().replace(",", "");
             et.setText(formatter.format(parseInt(b1)));
             et.setSelection(et.getText().length());
-           // editTextMAghsat.setText(formatter.format(a / parseInt(b1)));
         }
         et.addTextChangedListener(this);
     }

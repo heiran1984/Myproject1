@@ -21,7 +21,7 @@ public class CustomActionBar{
 
 
     public CustomActionBar(Context context, android.support.v7.app.ActionBar actionBar, String title) {
-        Typeface typeface=Typeface.createFromAsset(context.getAssets(),"fonts/B Nazanin Bold.ttf");
+        Typeface typeface=Typeface.createFromAsset(context.getAssets(),"fonts/IRANSansMobile.ttf");
 
         TextView textview = new TextView(context);
         layoutparams = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.WRAP_CONTENT);

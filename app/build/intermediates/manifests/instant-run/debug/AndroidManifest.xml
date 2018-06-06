@@ -29,7 +29,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.hamed.recyclerviewmysqlvolley.NewVamActivity" />
+        <activity
+            android:name="com.example.hamed.recyclerviewmysqlvolley.NewVamActivity"
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name="com.example.hamed.recyclerviewmysqlvolley.ListVamActivity"
             android:theme="@style/AppTheme1" />

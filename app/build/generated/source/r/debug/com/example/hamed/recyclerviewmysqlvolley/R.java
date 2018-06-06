@@ -25,8 +25,6 @@ public final class R {
     public static final int design_fab_out=0x7f01000d;
     public static final int design_snackbar_in=0x7f01000e;
     public static final int design_snackbar_out=0x7f01000f;
-    public static final int slide_in=0x7f010010;
-    public static final int slide_out=0x7f010011;
   }
   public static final class animator {
     public static final int design_appbar_state_list_animator=0x7f020000;
