@@ -21,6 +21,7 @@
         app:cardElevation="4dp"
         app:contentPadding="10dp">
 
+
         <LinearLayout
             android:id="@+id/row_linearLayout"
             android:layout_width="match_parent"

@@ -15,7 +15,6 @@
         android:layout_height="match_parent"
         android:layout_above="@id/buttonNewVam"
         >
-
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
@@ -24,86 +23,115 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true">
-           <TextView
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp">
+
+            <TextView
                 android:id="@+id/textView"
-                android:layout_width="100dp"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="وام گیرنده:"
+                android:textAppearance="@android:style/TextAppearance.Widget.TabWidget" />
+
+            <EditText
+                android:id="@+id/editTextUsername"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="وام گیرنده"
-                android:textColor="@android:color/black"/>
-
-        <EditText
-            android:id="@+id/editTextUsername"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:background="@drawable/bottom_border"
-            />
-        <TextView
+                android:background="@drawable/bottom_border"
+                android:enabled="false"
+                android:textAlignment="textStart" />
+        </LinearLayout>
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="مبلغ وام"
-            android:textColor="@android:color/black"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp">
 
-            />
-        <EditText
-            android:id="@+id/editTextMVam"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:inputType="number"
-            android:background="@drawable/bottom_border"
-            />
-        <TextView
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="مبلغ وام:"
+                android:textAppearance="@android:style/TextAppearance.Widget.TabWidget" />
+
+            <EditText
+                android:id="@+id/editTextMVam"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bottom_border"
+                android:inputType="number"
+                android:textAlignment="textStart" />
+        </LinearLayout>
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="تعداد اقساط"
-            android:textColor="@android:color/black"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp">
 
-            />
-        <EditText
-            android:id="@+id/editTAghsat"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="40"
-            android:inputType="number"
-            android:background="@drawable/bottom_border"
-            />
-        <TextView
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+
+                android:text="تعداد اقساط:"
+                android:textAppearance="@android:style/TextAppearance.Widget.TabWidget" />
+
+            <EditText
+                android:id="@+id/editTAghsat"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bottom_border"
+                android:inputType="number"
+                android:text="40"
+                android:textAlignment="textStart" />
+        </LinearLayout>
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="مبلغ هر قسط"
-            android:textColor="@android:color/black"
-            />
-        <EditText
-            android:id="@+id/editMaghsat"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:background="@drawable/bottom_border"
-            android:inputType="number"
-            />
-        <TextView
+            android:orientation="horizontal"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="مبلغ هر قسط:"
+                android:textAppearance="@android:style/TextAppearance.Widget.TabWidget" />
+
+            <EditText
+                android:id="@+id/editMaghsat"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bottom_border"
+                android:inputType="number"
+                android:textAlignment="textStart" />
+        </LinearLayout>
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="مبلغ پرداخت شده"
-            android:textColor="@android:color/black"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp">
 
-            />
-        <EditText
-            android:id="@+id/MPardakhtshoda"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:background="@drawable/bottom_border"
-            android:inputType="number"
-            android:text="0"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="مبلغ پرداخت شده:"
+                android:textAppearance="@android:style/TextAppearance.Widget.TabWidget" />
 
+            <EditText
+                android:id="@+id/MPardakhtshoda"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bottom_border"
+                android:inputType="number"
+                android:text="0"
+                android:textAlignment="textStart" />
+        </LinearLayout>
     </LinearLayout>
 
     </ScrollView>

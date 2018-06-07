@@ -252,11 +252,13 @@ public class ListUserActivity extends MyActivity implements View.OnLongClickList
     }
 
     public void DisplayVam(int position){
-        Intent intent;
-        intent=new Intent(this,ListVamActivity.class);
-        intent.putExtra("USERNAME",personUtilsList.get(position).getusername().replaceAll("\\d", "").trim());
-        this.startActivity(intent);
-        displayvam=1;
+        if (personUtilsList.get(position).getwam()==1) {
+            Intent intent;
+            intent = new Intent(this, ListVamActivity.class);
+            intent.putExtra("USERNAME", personUtilsList.get(position).getusername().replaceAll("\\d", "").trim());
+            this.startActivity(intent);
+            displayvam = 1;
+        }
     }
 
     public void updatelist(){
