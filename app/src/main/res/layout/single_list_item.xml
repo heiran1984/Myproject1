@@ -16,7 +16,6 @@
         android:layout_margin="5dp"
         android:foreground="?android:selectableItemBackground"
         android:clickable="true"
-        app:cardBackgroundColor="@android:color/darker_gray"
         app:cardCornerRadius="10dp"
         app:cardElevation="4dp"
         app:contentPadding="10dp">
@@ -36,8 +35,8 @@
 
                 <TextView
                     android:id="@+id/userId"
-                    android:layout_width="wrap_content"
-                    android:layout_height="40dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
                     android:layout_marginLeft="15dp"
                     android:gravity="center"
                     android:text="1"

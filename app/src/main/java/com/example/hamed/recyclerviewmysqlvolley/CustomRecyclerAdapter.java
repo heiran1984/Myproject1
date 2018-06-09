@@ -102,12 +102,16 @@ public class CustomRecyclerAdapter extends RecyclerView.Adapter<CustomRecyclerAd
         else
         {
 
-            if(pu.getwam()==1)
-                holder.row_cardView.setCardBackgroundColor(Color.GREEN);
-            else
-                holder.row_cardView.setCardBackgroundColor(Color.WHITE);
+            if(pu.getwam()==1) {
+                holder.userid.setBackgroundResource(R.drawable.border);
+                holder.userid.setTextColor(Color.WHITE);
+            }
+            else {
+                holder.userid.setBackgroundColor(Color.WHITE);
+                holder.userid.setTextColor(Color.BLACK);
 
-            holder.userid.setTextColor(Color.BLACK);
+            }
+
             holder.username.setTextColor(Color.BLACK);
             holder.mojodi.setTextColor(Color.BLACK);
         }
@@ -115,7 +119,6 @@ public class CustomRecyclerAdapter extends RecyclerView.Adapter<CustomRecyclerAd
         holder.userid.setText(Integer.toString(pu.getid()));
         holder.username.setText(pu.getusername());
         holder.mojodi.setText(formatter.format(pu.getmojodi()));
-       // holder.checkBox.setChecked(pu.ischecked());
         if(!listUserActivity.is_in_action_mode){
             holder.checkBox.setVisibility(View.GONE);
         }
@@ -160,14 +163,6 @@ public class CustomRecyclerAdapter extends RecyclerView.Adapter<CustomRecyclerAd
             row_cardView.setOnClickListener(this);
             this.listUserActivity=listUserActivity;
             row_cardView.setOnLongClickListener(listUserActivity);
-           // userid.setTypeface(typeface);
-           // username.setTypeface(typeface);
-           // mojodi.setTypeface(typeface);
-           // textName.setTypeface(typeface);
-           // textMojodi.setTypeface(typeface);
-
-
-
         }
 
         @Override

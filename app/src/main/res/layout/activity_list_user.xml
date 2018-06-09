@@ -27,7 +27,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="موجودی=0"
-                        android:textAppearance="@style/TextAppearance.AppCompat" />
+                        android:textAppearance="@style/TextAppearance.AppCompat"
+                        android:textColor="@android:color/white"
+                        android:textSize="10sp" />
                 </LinearLayout>
 
             </android.support.v7.widget.Toolbar>

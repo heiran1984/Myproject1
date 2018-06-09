@@ -66,6 +66,7 @@ public class ListVamActivity extends MyActivity {
     }
     public void sendRequest(){
         vamUtilsList.clear();
+        filteredlist.clear();
         JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(
                 Request.Method.POST, Constans.GET_VAM+"?string="+username, null,
                 new Response.Listener<JSONArray>() {

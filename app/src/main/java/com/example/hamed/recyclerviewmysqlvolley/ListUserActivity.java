@@ -81,7 +81,8 @@ public class ListUserActivity extends MyActivity implements View.OnLongClickList
         counter.setVisibility(View.GONE);
 
         mAdapter = new CustomRecyclerAdapter(ListUserActivity.this, personUtilsList);
-        sendRequest();
+       // recyclerView.setAdapter(mAdapter);
+       // sendRequest();
 
 
 
@@ -95,6 +96,7 @@ public class ListUserActivity extends MyActivity implements View.OnLongClickList
                     public void onResponse(JSONArray response) {
                         progressBar.setVisibility(View.INVISIBLE);
                         personUtilsList.clear();
+                        filteredList.clear();
                         int mojodi=0;
                         for(int i = 0; i < response.length(); i++){
                             PersonUtils personUtils = new PersonUtils();
@@ -114,7 +116,7 @@ public class ListUserActivity extends MyActivity implements View.OnLongClickList
                         }
 
                         mAdapter.notifyDataSetChanged();
-                        recyclerView.scrollToPosition(0);
+                       // recyclerView.scrollToPosition(0);
                         filteredList.addAll(personUtilsList);
                     }
                 }, new Response.ErrorListener() {
@@ -319,7 +321,6 @@ public class ListUserActivity extends MyActivity implements View.OnLongClickList
                 mAdapter.notifyDataSetChanged();
                 if (query.length() == 0) {
                     personUtilsList.addAll(filteredList);
-
                     recyclerView.setAdapter(mAdapter);
                 } else {
                     final String filterPattern = query.toString().trim();
@@ -373,7 +374,6 @@ public class ListUserActivity extends MyActivity implements View.OnLongClickList
             displayvam=0;
         else {
             sendRequest();
-
             Codes.clear();
             tozihat1.clear();
             position1.clear();

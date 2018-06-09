@@ -38,7 +38,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="شماره:"
-                        android:textColor="@color/divider"
+                        android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
                     <TextView
@@ -46,9 +46,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="1"
-                        android:textColor="@android:color/black"
-                        android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textAppearance="@android:style/TextAppearance.Widget.TabWidget" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -61,7 +59,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="تاریخ:"
-                        android:textColor="@color/divider"
+                        android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
                     <TextView
@@ -70,9 +68,7 @@
                         android:layout_height="wrap_content"
                         android:paddingLeft="0dp"
                         android:text="1"
-                        android:textColor="@android:color/black"
-                        android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textAppearance="@android:style/TextAppearance.Widget.TabWidget" />
                 </LinearLayout>
 
             </LinearLayout>
@@ -92,7 +88,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="نام:"
-                        android:textColor="@color/divider"
+                        android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
                     <TextView
@@ -100,9 +96,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="حیران"
-                        android:textColor="@android:color/black"
-                        android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textAppearance="@android:style/TextAppearance.Widget.TabWidget" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -114,7 +108,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="مبلغ قسط:"
-                        android:textColor="@color/divider"
+                        android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
                     <TextView
@@ -122,9 +116,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="5000"
-                        android:textColor="@android:color/black"
-                        android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textAppearance="@android:style/TextAppearance.Widget.TabWidget" />
                 </LinearLayout>
 
 
@@ -147,7 +139,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="مبلغ وام:"
-                        android:textColor="@color/divider"
+                        android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
                     <TextView
@@ -155,9 +147,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="۵۰۰۰۰"
-                        android:textColor="@android:color/black"
-                        android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textAppearance="@android:style/TextAppearance.Widget.TabWidget" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -170,7 +160,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="تعداد اقساط:"
-                        android:textColor="@color/divider"
+                        android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
                     <TextView
@@ -178,9 +168,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="۵۰۰۰۰"
-                        android:textColor="@android:color/black"
-                        android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textAppearance="@android:style/TextAppearance.Widget.TabWidget" />
 
                 </LinearLayout>
 
@@ -201,7 +189,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="مانده وام:"
-                        android:textColor="@color/divider"
+                        android:textColor="@android:color/black"
                         android:textStyle="bold" />
 
                     <TextView
@@ -209,9 +197,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="۵۰۰۰۰"
-                        android:textColor="@android:color/black"
-                        android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textAppearance="@android:style/TextAppearance.Widget.TabWidget" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -224,17 +210,15 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="تعداداقساط پرداخت شده:"
-                        android:textStyle="bold"
-                        android:textColor="@color/divider" />
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/tpardakhtshoda"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="۵۰۰۰۰"
-                        android:textColor="@android:color/black"
-                        android:textSize="12sp"
-                        android:textStyle="bold" />
+                        android:textAppearance="@android:style/TextAppearance.Widget.TabWidget" />
                 </LinearLayout>
 
             </LinearLayout>
