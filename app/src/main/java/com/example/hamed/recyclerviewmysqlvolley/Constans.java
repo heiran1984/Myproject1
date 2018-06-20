@@ -6,9 +6,7 @@ package com.example.hamed.recyclerviewmysqlvolley;
 
 public class Constans {
    // private static final String ROOT_URL="http://10.0.2.2/android/v1/";
-
-    private static final String ROOT_URL="http://192.168.43.135/android/v1/";
-
+    private static final String ROOT_URL="http://hheiran.ir/android/v1/";
     public static final String URL_REGISTER=ROOT_URL+"registerUser.php";
     public static final String REGISTER_SANDOGH=ROOT_URL+"registerSandogh.php";
     public static final String URL_UPDATE=ROOT_URL+"updateMojodi.php";
@@ -19,10 +17,4 @@ public class Constans {
     public static final String GET_SANDOGH_INFO=ROOT_URL+"DisplaySandogh.php";
     public static final String NEW_MOJODI=ROOT_URL+"newMojodi.php";
     public static final String URL_LOGIN=ROOT_URL+"userLogin.php";
-
-
-
-
-
-
 }

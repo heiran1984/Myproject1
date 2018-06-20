@@ -7,6 +7,8 @@ import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.design.widget.AppBarLayout;
+import android.support.design.widget.CoordinatorLayout;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -52,6 +54,8 @@ public class ListUserActivity extends MyActivity implements View.OnLongClickList
     private SearchView searchView;
     ProgressBar progressBar;
     Toolbar toolbar;
+    Snackbar snackbar;
+    private CoordinatorLayout coordinatorLayout;
     int count=0,position,update=0,displayvam=0;
     String username,tozihat="";
     AppBarLayout.LayoutParams params;
@@ -65,6 +69,7 @@ public class ListUserActivity extends MyActivity implements View.OnLongClickList
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_user);
+        coordinatorLayout=(CoordinatorLayout)findViewById(R.id.coordinatorLayout);
        // typeface=Typeface.createFromAsset(getAssets(),"IRANSansMobile.ttf");
         progressBar=(ProgressBar)findViewById(R.id.progressbar1);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -169,6 +174,8 @@ public class ListUserActivity extends MyActivity implements View.OnLongClickList
             if(count==0)
 
             {
+                snackbar = Snackbar
+                        .make(coordinatorLayout, "موجودی=" +formatter.format(count), Snackbar.LENGTH_INDEFINITE);
                 username = personUtilsList.get(position).getusername().replaceAll("\\d", "").trim();
 
             }
@@ -190,7 +197,13 @@ public class ListUserActivity extends MyActivity implements View.OnLongClickList
                     tozihat=tozihat+","+personUtilsList.get(position).getusername().replaceAll("[^\\.123456789]", "");
                 */
                 count=count+personUtilsList.get(position).getmojodi();
-                updateCounter(count);}
+                updateCounter(count);
+                snackbar.setText("موجودی=" +formatter.format(count));
+                snackbar.show();
+
+
+
+            }
         }
         else
         {
@@ -203,6 +216,9 @@ public class ListUserActivity extends MyActivity implements View.OnLongClickList
 
             count=count-personUtilsList.get(position).getmojodi();
             updateCounter(count);
+            snackbar.setText("موجودی=" +formatter.format(count));
+            if(count!=0)snackbar.show();else snackbar.dismiss();
+
         }
     }
 
@@ -382,7 +398,6 @@ public class ListUserActivity extends MyActivity implements View.OnLongClickList
         }
 
     }
-
 
     @Override
     public boolean onLongClick(View v) {

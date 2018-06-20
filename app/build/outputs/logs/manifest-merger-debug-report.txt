@@ -4,21 +4,21 @@ ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xm
 INJECTED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:2:1-39:12
 INJECTED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:2:1-39:12
 INJECTED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:2:1-39:12
-MERGED from [com.android.support:design:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\design-25.4.0.aar\ee6d6f908b8d974d6bccd1e634243d7b\AndroidManifest.xml:17:1-31:12
-MERGED from [uk.co.chrisjenx:calligraphy:2.3.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\calligraphy-2.3.0.aar\8f718cbe7869d66d0d653dbe08bc2ab2\AndroidManifest.xml:2:1-13:12
-MERGED from [com.android.support:appcompat-v7:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.4.0.aar\5e2f89eda6252d436e60fcb1f08ca088\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:recyclerview-v7:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.4.0.aar\fc5de2664368a123bf5425f4a1de4717\AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.volley:volley:1.0.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\292a15e467b67e8e2f3d7ac5e15035bb\AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:cardview-v7:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\cardview-v7-25.4.0.aar\5cc6ca1f5de5d950c50928e2410150ed\AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:transition:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\transition-25.4.0.aar\a406ba64c6b794be95f0ab9454fbd36e\AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:support-v4:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-v4-25.4.0.aar\170a563bcec572c31593dc82e5caf74b\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-fragment:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-fragment-25.4.0.aar\8f852c58173c17e0101d061b9eb71707\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:animated-vector-drawable:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.4.0.aar\629938d36ac20e1baa4e7bcdc3814318\AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:support-core-ui:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.4.0.aar\5e56325a0b2a3807d65376e25aa24e37\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-media-compat:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.4.0.aar\b6638fd00a934bf1557a12c568c238c2\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-core-utils:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.4.0.aar\3a2402bde69742b4a6904a57ebee2b2b\AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.support:support-vector-drawable:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.4.0.aar\f959087e80e98760596b72db67446a9f\AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:support-compat:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-compat-25.4.0.aar\068fb9732b7f5980b4fbfd1e47d623f4\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:design:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\design-25.4.0.aar\cf2f4af592b8845da4e7c4a51d376344\AndroidManifest.xml:17:1-31:12
+MERGED from [uk.co.chrisjenx:calligraphy:2.3.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\calligraphy-2.3.0.aar\000431f121252bf2b2d508592cae5045\AndroidManifest.xml:2:1-13:12
+MERGED from [com.android.support:appcompat-v7:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.4.0.aar\0d6a6edf08316bb28a65450f36cfdf3a\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:recyclerview-v7:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.4.0.aar\44cb0ce50307665534081217ddd6ae6e\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.volley:volley:1.0.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\b2b6cafc3d2ba5e9471676385f6916b0\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:cardview-v7:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\cardview-v7-25.4.0.aar\71cbb534d8ee932b28746cfef160f629\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:transition:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\transition-25.4.0.aar\f41dff1c1f18392d92d6ad585ebbc67b\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-v4-25.4.0.aar\43699ed0cd545b8cc8ed5191127cac55\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-fragment-25.4.0.aar\fbce8c07fd18b49087fa5141cacc02fa\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:animated-vector-drawable:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.4.0.aar\796819d0051210b8fa27b48354769758\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-core-ui:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.4.0.aar\b25c74eab60965fae5199dd6ac17ca62\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.4.0.aar\d48eb82a3c893821547ddc8242f850c8\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.4.0.aar\f4d93eb56b8dee1f2bda15df714c53f1\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-vector-drawable:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.4.0.aar\b73876d5c3abc80876e1b43c114748dd\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-compat:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-compat-25.4.0.aar\3781c3d62af23d97975ebbbf71582774\AndroidManifest.xml:17:1-31:12
 INJECTED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:2:1-39:12
 INJECTED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:2:1-39:12
 INJECTED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:2:1-39:12
@@ -42,36 +42,36 @@ ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xm
 		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:5:22-64
 application
 ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:7:5-37:19
-MERGED from [com.android.support:design:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\design-25.4.0.aar\ee6d6f908b8d974d6bccd1e634243d7b\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:design:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\design-25.4.0.aar\ee6d6f908b8d974d6bccd1e634243d7b\AndroidManifest.xml:25:5-29:19
-MERGED from [uk.co.chrisjenx:calligraphy:2.3.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\calligraphy-2.3.0.aar\8f718cbe7869d66d0d653dbe08bc2ab2\AndroidManifest.xml:11:5-20
-MERGED from [uk.co.chrisjenx:calligraphy:2.3.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\calligraphy-2.3.0.aar\8f718cbe7869d66d0d653dbe08bc2ab2\AndroidManifest.xml:11:5-20
-MERGED from [com.android.support:appcompat-v7:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.4.0.aar\5e2f89eda6252d436e60fcb1f08ca088\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:appcompat-v7:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.4.0.aar\5e2f89eda6252d436e60fcb1f08ca088\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:recyclerview-v7:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.4.0.aar\fc5de2664368a123bf5425f4a1de4717\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:recyclerview-v7:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.4.0.aar\fc5de2664368a123bf5425f4a1de4717\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.volley:volley:1.0.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\292a15e467b67e8e2f3d7ac5e15035bb\AndroidManifest.xml:9:5-20
-MERGED from [com.android.volley:volley:1.0.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\292a15e467b67e8e2f3d7ac5e15035bb\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support:cardview-v7:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\cardview-v7-25.4.0.aar\5cc6ca1f5de5d950c50928e2410150ed\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:cardview-v7:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\cardview-v7-25.4.0.aar\5cc6ca1f5de5d950c50928e2410150ed\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:transition:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\transition-25.4.0.aar\a406ba64c6b794be95f0ab9454fbd36e\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:transition:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\transition-25.4.0.aar\a406ba64c6b794be95f0ab9454fbd36e\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:support-v4:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-v4-25.4.0.aar\170a563bcec572c31593dc82e5caf74b\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-v4:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-v4-25.4.0.aar\170a563bcec572c31593dc82e5caf74b\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-fragment:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-fragment-25.4.0.aar\8f852c58173c17e0101d061b9eb71707\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-fragment:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-fragment-25.4.0.aar\8f852c58173c17e0101d061b9eb71707\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:animated-vector-drawable:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.4.0.aar\629938d36ac20e1baa4e7bcdc3814318\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:animated-vector-drawable:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.4.0.aar\629938d36ac20e1baa4e7bcdc3814318\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:support-core-ui:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.4.0.aar\5e56325a0b2a3807d65376e25aa24e37\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-ui:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.4.0.aar\5e56325a0b2a3807d65376e25aa24e37\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-media-compat:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.4.0.aar\b6638fd00a934bf1557a12c568c238c2\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-media-compat:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.4.0.aar\b6638fd00a934bf1557a12c568c238c2\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-utils:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.4.0.aar\3a2402bde69742b4a6904a57ebee2b2b\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-core-utils:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.4.0.aar\3a2402bde69742b4a6904a57ebee2b2b\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-vector-drawable:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.4.0.aar\f959087e80e98760596b72db67446a9f\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:support-vector-drawable:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.4.0.aar\f959087e80e98760596b72db67446a9f\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:support-compat:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-compat-25.4.0.aar\068fb9732b7f5980b4fbfd1e47d623f4\AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.support:support-compat:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-compat-25.4.0.aar\068fb9732b7f5980b4fbfd1e47d623f4\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:design:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\design-25.4.0.aar\cf2f4af592b8845da4e7c4a51d376344\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:design:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\design-25.4.0.aar\cf2f4af592b8845da4e7c4a51d376344\AndroidManifest.xml:25:5-29:19
+MERGED from [uk.co.chrisjenx:calligraphy:2.3.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\calligraphy-2.3.0.aar\000431f121252bf2b2d508592cae5045\AndroidManifest.xml:11:5-20
+MERGED from [uk.co.chrisjenx:calligraphy:2.3.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\calligraphy-2.3.0.aar\000431f121252bf2b2d508592cae5045\AndroidManifest.xml:11:5-20
+MERGED from [com.android.support:appcompat-v7:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.4.0.aar\0d6a6edf08316bb28a65450f36cfdf3a\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:appcompat-v7:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.4.0.aar\0d6a6edf08316bb28a65450f36cfdf3a\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:recyclerview-v7:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.4.0.aar\44cb0ce50307665534081217ddd6ae6e\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:recyclerview-v7:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.4.0.aar\44cb0ce50307665534081217ddd6ae6e\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.volley:volley:1.0.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\b2b6cafc3d2ba5e9471676385f6916b0\AndroidManifest.xml:9:5-20
+MERGED from [com.android.volley:volley:1.0.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\b2b6cafc3d2ba5e9471676385f6916b0\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:cardview-v7:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\cardview-v7-25.4.0.aar\71cbb534d8ee932b28746cfef160f629\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:cardview-v7:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\cardview-v7-25.4.0.aar\71cbb534d8ee932b28746cfef160f629\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:transition:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\transition-25.4.0.aar\f41dff1c1f18392d92d6ad585ebbc67b\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:transition:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\transition-25.4.0.aar\f41dff1c1f18392d92d6ad585ebbc67b\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-v4:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-v4-25.4.0.aar\43699ed0cd545b8cc8ed5191127cac55\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-v4-25.4.0.aar\43699ed0cd545b8cc8ed5191127cac55\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-fragment-25.4.0.aar\fbce8c07fd18b49087fa5141cacc02fa\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-fragment-25.4.0.aar\fbce8c07fd18b49087fa5141cacc02fa\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:animated-vector-drawable:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.4.0.aar\796819d0051210b8fa27b48354769758\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:animated-vector-drawable:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.4.0.aar\796819d0051210b8fa27b48354769758\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-core-ui:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.4.0.aar\b25c74eab60965fae5199dd6ac17ca62\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.4.0.aar\b25c74eab60965fae5199dd6ac17ca62\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.4.0.aar\d48eb82a3c893821547ddc8242f850c8\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.4.0.aar\d48eb82a3c893821547ddc8242f850c8\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.4.0.aar\f4d93eb56b8dee1f2bda15df714c53f1\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.4.0.aar\f4d93eb56b8dee1f2bda15df714c53f1\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-vector-drawable:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.4.0.aar\b73876d5c3abc80876e1b43c114748dd\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.4.0.aar\b73876d5c3abc80876e1b43c114748dd\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-compat:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-compat-25.4.0.aar\3781c3d62af23d97975ebbbf71582774\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-compat-25.4.0.aar\3781c3d62af23d97975ebbbf71582774\AndroidManifest.xml:25:5-29:19
 	android:supportsRtl
 		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:12:9-35
 	android:label
@@ -146,40 +146,40 @@ uses-sdk
 INJECTED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml
 INJECTED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml
-MERGED from [com.android.support:design:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\design-25.4.0.aar\ee6d6f908b8d974d6bccd1e634243d7b\AndroidManifest.xml:21:5-23:62
-MERGED from [com.android.support:design:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\design-25.4.0.aar\ee6d6f908b8d974d6bccd1e634243d7b\AndroidManifest.xml:21:5-23:62
-MERGED from [uk.co.chrisjenx:calligraphy:2.3.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\calligraphy-2.3.0.aar\8f718cbe7869d66d0d653dbe08bc2ab2\AndroidManifest.xml:7:5-9:41
-MERGED from [uk.co.chrisjenx:calligraphy:2.3.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\calligraphy-2.3.0.aar\8f718cbe7869d66d0d653dbe08bc2ab2\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:appcompat-v7:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.4.0.aar\5e2f89eda6252d436e60fcb1f08ca088\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:appcompat-v7:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.4.0.aar\5e2f89eda6252d436e60fcb1f08ca088\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:recyclerview-v7:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.4.0.aar\fc5de2664368a123bf5425f4a1de4717\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:recyclerview-v7:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.4.0.aar\fc5de2664368a123bf5425f4a1de4717\AndroidManifest.xml:20:5-43
-MERGED from [com.android.volley:volley:1.0.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\292a15e467b67e8e2f3d7ac5e15035bb\AndroidManifest.xml:7:5-43
-MERGED from [com.android.volley:volley:1.0.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\292a15e467b67e8e2f3d7ac5e15035bb\AndroidManifest.xml:7:5-43
-MERGED from [com.android.support:cardview-v7:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\cardview-v7-25.4.0.aar\5cc6ca1f5de5d950c50928e2410150ed\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:cardview-v7:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\cardview-v7-25.4.0.aar\5cc6ca1f5de5d950c50928e2410150ed\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:transition:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\transition-25.4.0.aar\a406ba64c6b794be95f0ab9454fbd36e\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\transition-25.4.0.aar\a406ba64c6b794be95f0ab9454fbd36e\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-v4-25.4.0.aar\170a563bcec572c31593dc82e5caf74b\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-v4:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-v4-25.4.0.aar\170a563bcec572c31593dc82e5caf74b\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-fragment:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-fragment-25.4.0.aar\8f852c58173c17e0101d061b9eb71707\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-fragment:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-fragment-25.4.0.aar\8f852c58173c17e0101d061b9eb71707\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:animated-vector-drawable:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.4.0.aar\629938d36ac20e1baa4e7bcdc3814318\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.4.0.aar\629938d36ac20e1baa4e7bcdc3814318\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.4.0.aar\5e56325a0b2a3807d65376e25aa24e37\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-ui:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.4.0.aar\5e56325a0b2a3807d65376e25aa24e37\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-media-compat:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.4.0.aar\b6638fd00a934bf1557a12c568c238c2\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-media-compat:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.4.0.aar\b6638fd00a934bf1557a12c568c238c2\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-utils:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.4.0.aar\3a2402bde69742b4a6904a57ebee2b2b\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-core-utils:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.4.0.aar\3a2402bde69742b4a6904a57ebee2b2b\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-vector-drawable:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.4.0.aar\f959087e80e98760596b72db67446a9f\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-vector-drawable:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.4.0.aar\f959087e80e98760596b72db67446a9f\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-compat:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-compat-25.4.0.aar\068fb9732b7f5980b4fbfd1e47d623f4\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-compat-25.4.0.aar\068fb9732b7f5980b4fbfd1e47d623f4\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:design:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\design-25.4.0.aar\cf2f4af592b8845da4e7c4a51d376344\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:design:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\design-25.4.0.aar\cf2f4af592b8845da4e7c4a51d376344\AndroidManifest.xml:21:5-23:62
+MERGED from [uk.co.chrisjenx:calligraphy:2.3.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\calligraphy-2.3.0.aar\000431f121252bf2b2d508592cae5045\AndroidManifest.xml:7:5-9:41
+MERGED from [uk.co.chrisjenx:calligraphy:2.3.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\calligraphy-2.3.0.aar\000431f121252bf2b2d508592cae5045\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.4.0.aar\0d6a6edf08316bb28a65450f36cfdf3a\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.4.0.aar\0d6a6edf08316bb28a65450f36cfdf3a\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:recyclerview-v7:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.4.0.aar\44cb0ce50307665534081217ddd6ae6e\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.4.0.aar\44cb0ce50307665534081217ddd6ae6e\AndroidManifest.xml:20:5-43
+MERGED from [com.android.volley:volley:1.0.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\b2b6cafc3d2ba5e9471676385f6916b0\AndroidManifest.xml:7:5-43
+MERGED from [com.android.volley:volley:1.0.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\b2b6cafc3d2ba5e9471676385f6916b0\AndroidManifest.xml:7:5-43
+MERGED from [com.android.support:cardview-v7:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\cardview-v7-25.4.0.aar\71cbb534d8ee932b28746cfef160f629\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:cardview-v7:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\cardview-v7-25.4.0.aar\71cbb534d8ee932b28746cfef160f629\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:transition:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\transition-25.4.0.aar\f41dff1c1f18392d92d6ad585ebbc67b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\transition-25.4.0.aar\f41dff1c1f18392d92d6ad585ebbc67b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-v4-25.4.0.aar\43699ed0cd545b8cc8ed5191127cac55\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-v4-25.4.0.aar\43699ed0cd545b8cc8ed5191127cac55\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-fragment-25.4.0.aar\fbce8c07fd18b49087fa5141cacc02fa\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-fragment-25.4.0.aar\fbce8c07fd18b49087fa5141cacc02fa\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:animated-vector-drawable:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.4.0.aar\796819d0051210b8fa27b48354769758\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.4.0.aar\796819d0051210b8fa27b48354769758\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.4.0.aar\b25c74eab60965fae5199dd6ac17ca62\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.4.0.aar\b25c74eab60965fae5199dd6ac17ca62\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-media-compat:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.4.0.aar\d48eb82a3c893821547ddc8242f850c8\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.4.0.aar\d48eb82a3c893821547ddc8242f850c8\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.4.0.aar\f4d93eb56b8dee1f2bda15df714c53f1\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.4.0.aar\f4d93eb56b8dee1f2bda15df714c53f1\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-vector-drawable:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.4.0.aar\b73876d5c3abc80876e1b43c114748dd\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-vector-drawable:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.4.0.aar\b73876d5c3abc80876e1b43c114748dd\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-compat:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-compat-25.4.0.aar\3781c3d62af23d97975ebbbf71582774\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-compat-25.4.0.aar\3781c3d62af23d97975ebbbf71582774\AndroidManifest.xml:21:5-23:58
 INJECTED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml
 INJECTED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml
 	tools:overrideLibrary
-		ADDED from [com.android.support:design:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\design-25.4.0.aar\ee6d6f908b8d974d6bccd1e634243d7b\AndroidManifest.xml:23:9-59
+		ADDED from [com.android.support:design:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\design-25.4.0.aar\cf2f4af592b8845da4e7c4a51d376344\AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
 		INJECTED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml
 		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml
@@ -189,32 +189,32 @@ INJECTED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest
 		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml
 		INJECTED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml
 meta-data#android.support.VERSION
-ADDED from [com.android.support:design:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\design-25.4.0.aar\ee6d6f908b8d974d6bccd1e634243d7b\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:appcompat-v7:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.4.0.aar\5e2f89eda6252d436e60fcb1f08ca088\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:appcompat-v7:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.4.0.aar\5e2f89eda6252d436e60fcb1f08ca088\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:recyclerview-v7:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.4.0.aar\fc5de2664368a123bf5425f4a1de4717\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:recyclerview-v7:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.4.0.aar\fc5de2664368a123bf5425f4a1de4717\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:cardview-v7:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\cardview-v7-25.4.0.aar\5cc6ca1f5de5d950c50928e2410150ed\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:cardview-v7:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\cardview-v7-25.4.0.aar\5cc6ca1f5de5d950c50928e2410150ed\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:transition:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\transition-25.4.0.aar\a406ba64c6b794be95f0ab9454fbd36e\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:transition:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\transition-25.4.0.aar\a406ba64c6b794be95f0ab9454fbd36e\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:support-v4:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-v4-25.4.0.aar\170a563bcec572c31593dc82e5caf74b\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-v4:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-v4-25.4.0.aar\170a563bcec572c31593dc82e5caf74b\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-fragment:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-fragment-25.4.0.aar\8f852c58173c17e0101d061b9eb71707\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-fragment:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-fragment-25.4.0.aar\8f852c58173c17e0101d061b9eb71707\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:animated-vector-drawable:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.4.0.aar\629938d36ac20e1baa4e7bcdc3814318\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:animated-vector-drawable:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.4.0.aar\629938d36ac20e1baa4e7bcdc3814318\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:support-core-ui:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.4.0.aar\5e56325a0b2a3807d65376e25aa24e37\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-ui:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.4.0.aar\5e56325a0b2a3807d65376e25aa24e37\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-media-compat:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.4.0.aar\b6638fd00a934bf1557a12c568c238c2\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-media-compat:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.4.0.aar\b6638fd00a934bf1557a12c568c238c2\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-utils:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.4.0.aar\3a2402bde69742b4a6904a57ebee2b2b\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-core-utils:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.4.0.aar\3a2402bde69742b4a6904a57ebee2b2b\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-vector-drawable:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.4.0.aar\f959087e80e98760596b72db67446a9f\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:support-vector-drawable:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.4.0.aar\f959087e80e98760596b72db67446a9f\AndroidManifest.xml:23:9-25:38
-MERGED from [com.android.support:support-compat:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-compat-25.4.0.aar\068fb9732b7f5980b4fbfd1e47d623f4\AndroidManifest.xml:26:9-28:38
-MERGED from [com.android.support:support-compat:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-compat-25.4.0.aar\068fb9732b7f5980b4fbfd1e47d623f4\AndroidManifest.xml:26:9-28:38
+ADDED from [com.android.support:design:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\design-25.4.0.aar\cf2f4af592b8845da4e7c4a51d376344\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:appcompat-v7:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.4.0.aar\0d6a6edf08316bb28a65450f36cfdf3a\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:appcompat-v7:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.4.0.aar\0d6a6edf08316bb28a65450f36cfdf3a\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:recyclerview-v7:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.4.0.aar\44cb0ce50307665534081217ddd6ae6e\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:recyclerview-v7:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.4.0.aar\44cb0ce50307665534081217ddd6ae6e\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:cardview-v7:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\cardview-v7-25.4.0.aar\71cbb534d8ee932b28746cfef160f629\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:cardview-v7:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\cardview-v7-25.4.0.aar\71cbb534d8ee932b28746cfef160f629\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:transition:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\transition-25.4.0.aar\f41dff1c1f18392d92d6ad585ebbc67b\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:transition:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\transition-25.4.0.aar\f41dff1c1f18392d92d6ad585ebbc67b\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-v4:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-v4-25.4.0.aar\43699ed0cd545b8cc8ed5191127cac55\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-v4:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-v4-25.4.0.aar\43699ed0cd545b8cc8ed5191127cac55\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-fragment-25.4.0.aar\fbce8c07fd18b49087fa5141cacc02fa\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-fragment-25.4.0.aar\fbce8c07fd18b49087fa5141cacc02fa\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:animated-vector-drawable:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.4.0.aar\796819d0051210b8fa27b48354769758\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:animated-vector-drawable:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.4.0.aar\796819d0051210b8fa27b48354769758\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-core-ui:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.4.0.aar\b25c74eab60965fae5199dd6ac17ca62\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.4.0.aar\b25c74eab60965fae5199dd6ac17ca62\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.4.0.aar\d48eb82a3c893821547ddc8242f850c8\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.4.0.aar\d48eb82a3c893821547ddc8242f850c8\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.4.0.aar\f4d93eb56b8dee1f2bda15df714c53f1\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.4.0.aar\f4d93eb56b8dee1f2bda15df714c53f1\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-vector-drawable:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.4.0.aar\b73876d5c3abc80876e1b43c114748dd\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.4.0.aar\b73876d5c3abc80876e1b43c114748dd\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-compat:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-compat-25.4.0.aar\3781c3d62af23d97975ebbbf71582774\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-compat-25.4.0.aar\3781c3d62af23d97975ebbbf71582774\AndroidManifest.xml:26:9-28:38
 	android:value
-		ADDED from [com.android.support:design:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\design-25.4.0.aar\ee6d6f908b8d974d6bccd1e634243d7b\AndroidManifest.xml:28:13-35
+		ADDED from [com.android.support:design:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\design-25.4.0.aar\cf2f4af592b8845da4e7c4a51d376344\AndroidManifest.xml:28:13-35
 	android:name
-		ADDED from [com.android.support:design:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\design-25.4.0.aar\ee6d6f908b8d974d6bccd1e634243d7b\AndroidManifest.xml:27:13-51
+		ADDED from [com.android.support:design:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\design-25.4.0.aar\cf2f4af592b8845da4e7c4a51d376344\AndroidManifest.xml:27:13-51

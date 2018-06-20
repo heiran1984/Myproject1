@@ -151,7 +151,6 @@ public class MainActivity extends MyActivity implements NavigationView.OnNavigat
                             Mojodi.setText("موجودی صندوق="+formatter.format(MojodiSandogh));
                             TOzv.setText("تعداد اعضا="+formatter.format(tozv));
                             TWam.setText("تعداد وام="+formatter.format(twam));
-
                             String str[]=obj.getString("tarikh").split("-");
                             CalendarTool calendarTool = new CalendarTool();
 
@@ -160,6 +159,7 @@ public class MainActivity extends MyActivity implements NavigationView.OnNavigat
 
                         } catch (JSONException e) {
                             e.printStackTrace();
+                            Toast.makeText(context,e.getMessage().toString(),Toast.LENGTH_SHORT).show();
                         }
 
 

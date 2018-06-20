@@ -2,39 +2,38 @@
 <instant-run
     abi="armeabi-v7a,armeabi"
     api-level="23"
-    build-mode="COLD"
+    build-mode="HOT_WARM"
     density="xhdpi"
     format="10"
-    ir-eligibility="COMPATIBLE"
-    plugin-version="3.1.2"
-    timestamp="1528485066000"
+    plugin-version="3.1.3"
+    timestamp="1529508782525"
     token="-812421299134586601"
-    verifier="COLD_SWAP_REQUESTED" >
+    verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="1856" />
+        duration="552" />
     <task
         name="instant-run-dex"
-        duration="0" />
+        duration="198" />
     <task
         name="instant-run-transform"
-        duration="193" />
+        duration="156" />
     <task
         name="verifier"
-        duration="54" />
+        duration="37" />
 
     <artifact
-        location="G:\1397-02-04\RecyclerViewMysqlVolley\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
-        type="SPLIT" />
-    <artifact
-        location="G:\1397-02-04\RecyclerViewMysqlVolley\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
-        type="SPLIT_MAIN" />
+        location="G:\1397-02-04\RecyclerViewMysqlVolley\app\build\intermediates\reload-dex\debug\classes.dex"
+        type="RELOAD_DEX" />
 
     <build
         build-mode="FULL"
-        timestamp="1528484819187"
+        timestamp="1529508694898"
         verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="G:\1397-02-04\RecyclerViewMysqlVolley\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+            type="SPLIT" />
         <artifact
             location="G:\1397-02-04\RecyclerViewMysqlVolley\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
             type="SPLIT_MAIN" />
@@ -54,35 +53,28 @@
             location="G:\1397-02-04\RecyclerViewMysqlVolley\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
             type="SPLIT" />
         <artifact
-            location="G:\1397-02-04\RecyclerViewMysqlVolley\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
-            type="SPLIT" />
-        <artifact
             location="G:\1397-02-04\RecyclerViewMysqlVolley\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
             type="SPLIT" />
         <artifact
             location="G:\1397-02-04\RecyclerViewMysqlVolley\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
             type="SPLIT" />
         <artifact
-            location="G:\1397-02-04\RecyclerViewMysqlVolley\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+            location="G:\1397-02-04\RecyclerViewMysqlVolley\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
             type="SPLIT" />
         <artifact
-            location="G:\1397-02-04\RecyclerViewMysqlVolley\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
+            location="G:\1397-02-04\RecyclerViewMysqlVolley\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
         <artifact
             location="G:\1397-02-04\RecyclerViewMysqlVolley\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
             type="SPLIT" />
     </build>
     <build
-        build-mode="COLD"
-        ir-eligibility="COMPATIBLE"
-        timestamp="1528485066000"
-        verifier="COLD_SWAP_REQUESTED" >
+        build-mode="HOT_WARM"
+        timestamp="1529508782525"
+        verifier="COMPATIBLE" >
         <artifact
-            location="G:\1397-02-04\RecyclerViewMysqlVolley\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
-            type="SPLIT" />
-        <artifact
-            location="G:\1397-02-04\RecyclerViewMysqlVolley\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
-            type="SPLIT_MAIN" />
+            location="G:\1397-02-04\RecyclerViewMysqlVolley\app\build\intermediates\reload-dex\debug\classes.dex"
+            type="RELOAD_DEX" />
     </build>
 
 </instant-run>

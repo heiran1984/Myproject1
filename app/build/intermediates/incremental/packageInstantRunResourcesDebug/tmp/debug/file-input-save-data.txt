@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sun Jun 03 04:56:27 IRDT 2018
+#Tue Jun 19 10:25:23 IRDT 2018
 4.path=fonts/B Nazanin.ttf
 8.set=ASSET
 6.path=fonts/IRANSans.ttf
