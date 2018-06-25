@@ -6,6 +6,8 @@
     android:layoutDirection="rtl"
     android:textDirection="rtl"
     android:background="@color/colorwam"
+    android:id="@+id/coordinator"
+    android:fitsSystemWindows="true"
     >
 
     <android.support.design.widget.AppBarLayout
@@ -31,6 +33,7 @@
         android:layout_gravity="center"
         android:minHeight="50dp"
         android:minWidth="50dp" />
+    <include layout="@layout/persistent_bottomsheet"/>
 
 
 </android.support.design.widget.CoordinatorLayout>

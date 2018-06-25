@@ -17,4 +17,10 @@ public class Constans {
     public static final String GET_SANDOGH_INFO=ROOT_URL+"DisplaySandogh.php";
     public static final String NEW_MOJODI=ROOT_URL+"newMojodi.php";
     public static final String URL_LOGIN=ROOT_URL+"userLogin.php";
+    public static final String URL_DELUSER=ROOT_URL+"deleteUser.php";
+    public static final String URL_DELVAM=ROOT_URL+"deleteVam.php";
+ public static final String URL_TASFIYAVAM=ROOT_URL+"tasfiyaVam.php";
+
+
+
 }

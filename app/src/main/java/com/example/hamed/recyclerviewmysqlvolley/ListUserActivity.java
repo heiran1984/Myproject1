@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.Snackbar;
@@ -28,6 +29,7 @@ import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
+import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
 import org.json.JSONArray;
@@ -51,6 +53,7 @@ public class ListUserActivity extends MyActivity implements View.OnLongClickList
     RecyclerView recyclerView;
     RecyclerView.Adapter mAdapter;
     RecyclerView.LayoutManager layoutManager;
+    Parcelable recyclerViewState;
     private SearchView searchView;
     ProgressBar progressBar;
     Toolbar toolbar;
@@ -64,11 +67,13 @@ public class ListUserActivity extends MyActivity implements View.OnLongClickList
     ArrayList<String> tozihat1=new ArrayList<>();
     ArrayList<Integer> position1=new ArrayList<>();
     DecimalFormat formatter=new DecimalFormat("#,###,###");
+    Context context;
    // Typeface typeface;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_user);
+        context=this;
         coordinatorLayout=(CoordinatorLayout)findViewById(R.id.coordinatorLayout);
        // typeface=Typeface.createFromAsset(getAssets(),"IRANSansMobile.ttf");
         progressBar=(ProgressBar)findViewById(R.id.progressbar1);
@@ -146,14 +151,14 @@ public class ListUserActivity extends MyActivity implements View.OnLongClickList
         }
         if(item.getItemId()==R.id.Add){
             if(count!=0) {
+                recyclerViewState=recyclerView.getLayoutManager().onSaveInstanceState();
+                snackbar.dismiss();
                 Intent intent;
                 intent = new Intent(this, NewVamActivity.class);
                 intent.putExtra("USERNAME", username);
                 intent.putExtra("MVAM", Integer.toString(count));
                 intent.putExtra("TOZIHAT",tozihat1.toString());
                 intent.putExtra("codes",Codes);
-                //Toast.makeText(this,tozihat1.toString(),Toast.LENGTH_SHORT).show();
-               // tozihat="";
                 startActivity(intent);
             }
         }
@@ -164,6 +169,11 @@ public class ListUserActivity extends MyActivity implements View.OnLongClickList
         if(item.getItemId()==R.id.Mojodi){
             if(position1.size()==1)
                 AfzayeshMojodi(position1.get(0));
+        }
+        if(item.getItemId()==R.id.Delete){
+            if(position1.size()==1)
+                if(personUtilsList.get(position1.get(0)).getwam()!=1)
+                deleteuser(position1.get(0));
         }
         return true;
     }
@@ -223,6 +233,7 @@ public class ListUserActivity extends MyActivity implements View.OnLongClickList
     }
 
     public void edituser(int position){
+        snackbar.dismiss();
         Intent intent;
         intent=new Intent(this,NewOzvActivity.class);
         intent.putExtra("USERNAME",personUtilsList.get(position).getusername().toString());
@@ -231,7 +242,41 @@ public class ListUserActivity extends MyActivity implements View.OnLongClickList
         this.startActivityForResult(intent,1);
     }
 
+    public void deleteuser(final int position){
+        snackbar.dismiss();
+        StringRequest stringRequest=new StringRequest(Request.Method.POST,
+                Constans.URL_DELUSER+"?string="+personUtilsList.get(position).getCode(),
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        personUtilsList.remove(position);
+                        mAdapter.notifyItemRemoved(position);
+                        int i;
+                        for(i=0;i<personUtilsList.size();i++){
+                            personUtilsList.get(i).setid(i+1);
+                            mAdapter.notifyItemChanged(i);
+                        }
+                        snackbar.dismiss();
+                        position1.clear();
+                        //mAdapter.notifyDataSetChanged();
+                        new CustomToast(context,"حذف شد!");
+
+
+                    }
+                },new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Toast.makeText(getApplicationContext(),error.getMessage(),Toast.LENGTH_LONG).show();
+            }
+        });
+
+        RequestQueue requestQueue= Volley.newRequestQueue(this);
+        requestQueue.add(stringRequest);
+    }
+
+
     public void AfzayeshMojodi(int position){
+        snackbar.dismiss();
         Intent intent;
         intent=new Intent(this,NewMojodiActivity.class);
         intent.putExtra("USERNAME",personUtilsList.get(position).getusername().toString());
@@ -360,6 +405,7 @@ public class ListUserActivity extends MyActivity implements View.OnLongClickList
         super.onStart();
         if(is_in_action_mode){
             clearActionMode();
+            recyclerView.getLayoutManager().onRestoreInstanceState(recyclerViewState);
         }
       //  if(personUtilsList.size()!=filteredList.size()){
      //       personUtilsList.clear();
@@ -394,7 +440,7 @@ public class ListUserActivity extends MyActivity implements View.OnLongClickList
             tozihat1.clear();
             position1.clear();
             recyclerView.setAdapter(mAdapter);
-            recyclerView.scrollToPosition(position);
+            //recyclerView.scrollToPosition(position);
         }
 
     }

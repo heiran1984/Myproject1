@@ -7,6 +7,8 @@
     <color name="colorBack">#a7ffa7</color>
     <color name="colorActionBar">#000000</color>
     <color name="colorwam">#e7e7e7</color>
+    <color name="bs_text_color">#000000</color>
+
 
 
 </resources>

@@ -384,10 +384,6 @@
         "source": "C:\\Users\\Hamed\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.4.0.aar\\0d6a6edf08316bb28a65450f36cfdf3a\\res\\drawable-xxhdpi-v4\\abc_list_longpressed_holo.9.png"
     },
     {
-        "merged": "G:\\1397-02-04\\RecyclerViewMysqlVolley\\app\\build\\intermediates\\res\\merged\\debug\\drawable_wellcom.jpg.flat",
-        "source": "G:\\1397-02-04\\RecyclerViewMysqlVolley\\app\\src\\main\\res\\drawable\\wellcom.jpg"
-    },
-    {
         "merged": "G:\\1397-02-04\\RecyclerViewMysqlVolley\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_action_name3.png.flat",
         "source": "G:\\1397-02-04\\RecyclerViewMysqlVolley\\app\\src\\main\\res\\drawable-xhdpi\\ic_action_name3.png"
     },
@@ -430,6 +426,10 @@
     {
         "merged": "G:\\1397-02-04\\RecyclerViewMysqlVolley\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_pressed_holo_light.9.png.flat",
         "source": "C:\\Users\\Hamed\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.4.0.aar\\0d6a6edf08316bb28a65450f36cfdf3a\\res\\drawable-xxhdpi-v4\\abc_list_pressed_holo_light.9.png"
+    },
+    {
+        "merged": "G:\\1397-02-04\\RecyclerViewMysqlVolley\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialog_bottomsheet.xml.flat",
+        "source": "G:\\1397-02-04\\RecyclerViewMysqlVolley\\app\\src\\main\\res\\layout\\dialog_bottomsheet.xml"
     },
     {
         "merged": "G:\\1397-02-04\\RecyclerViewMysqlVolley\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_action_name2.png.flat",
@@ -520,6 +520,10 @@
         "source": "C:\\Users\\Hamed\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.4.0.aar\\0d6a6edf08316bb28a65450f36cfdf3a\\res\\color-v11\\abc_background_cache_hint_selector_material_dark.xml"
     },
     {
+        "merged": "G:\\1397-02-04\\RecyclerViewMysqlVolley\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_delete.png.flat",
+        "source": "G:\\1397-02-04\\RecyclerViewMysqlVolley\\app\\src\\main\\res\\drawable-xxhdpi\\ic_delete.png"
+    },
+    {
         "merged": "G:\\1397-02-04\\RecyclerViewMysqlVolley\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_design_ic_visibility.png.flat",
         "source": "C:\\Users\\Hamed\\.gradle\\caches\\transforms-1\\files-1.1\\design-25.4.0.aar\\cf2f4af592b8845da4e7c4a51d376344\\res\\drawable-hdpi-v4\\design_ic_visibility.png"
     },
@@ -604,6 +608,10 @@
         "source": "C:\\Users\\Hamed\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.4.0.aar\\0d6a6edf08316bb28a65450f36cfdf3a\\res\\drawable-ldrtl-hdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
+        "merged": "G:\\1397-02-04\\RecyclerViewMysqlVolley\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_delete.png.flat",
+        "source": "G:\\1397-02-04\\RecyclerViewMysqlVolley\\app\\src\\main\\res\\drawable-hdpi\\ic_delete.png"
+    },
+    {
         "merged": "G:\\1397-02-04\\RecyclerViewMysqlVolley\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_mojodi.png.flat",
         "source": "G:\\1397-02-04\\RecyclerViewMysqlVolley\\app\\src\\main\\res\\drawable-xxhdpi\\ic_mojodi.png"
     },
@@ -662,10 +670,6 @@
     {
         "merged": "G:\\1397-02-04\\RecyclerViewMysqlVolley\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_item_background_holo_dark.xml.flat",
         "source": "C:\\Users\\Hamed\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.4.0.aar\\0d6a6edf08316bb28a65450f36cfdf3a\\res\\drawable\\abc_item_background_holo_dark.xml"
-    },
-    {
-        "merged": "G:\\1397-02-04\\RecyclerViewMysqlVolley\\app\\build\\intermediates\\res\\merged\\debug\\drawable_www.jpg.flat",
-        "source": "G:\\1397-02-04\\RecyclerViewMysqlVolley\\app\\src\\main\\res\\drawable\\www.jpg"
     },
     {
         "merged": "G:\\1397-02-04\\RecyclerViewMysqlVolley\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
@@ -782,6 +786,10 @@
     {
         "merged": "G:\\1397-02-04\\RecyclerViewMysqlVolley\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
         "source": "C:\\Users\\Hamed\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.4.0.aar\\0d6a6edf08316bb28a65450f36cfdf3a\\res\\drawable-hdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
+    },
+    {
+        "merged": "G:\\1397-02-04\\RecyclerViewMysqlVolley\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_delete.png.flat",
+        "source": "G:\\1397-02-04\\RecyclerViewMysqlVolley\\app\\src\\main\\res\\drawable-xhdpi\\ic_delete.png"
     },
     {
         "merged": "G:\\1397-02-04\\RecyclerViewMysqlVolley\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_half_black_36dp.png.flat",
@@ -1160,6 +1168,10 @@
         "source": "C:\\Users\\Hamed\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.4.0.aar\\0d6a6edf08316bb28a65450f36cfdf3a\\res\\layout-v21\\notification_template_icon_group.xml"
     },
     {
+        "merged": "G:\\1397-02-04\\RecyclerViewMysqlVolley\\app\\build\\intermediates\\res\\merged\\debug\\layout_persistent_bottomsheet.xml.flat",
+        "source": "G:\\1397-02-04\\RecyclerViewMysqlVolley\\app\\src\\main\\res\\layout\\persistent_bottomsheet.xml"
+    },
+    {
         "merged": "G:\\1397-02-04\\RecyclerViewMysqlVolley\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_edit_text_material.xml.flat",
         "source": "C:\\Users\\Hamed\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.4.0.aar\\0d6a6edf08316bb28a65450f36cfdf3a\\res\\drawable\\abc_edit_text_material.xml"
     },
@@ -1342,6 +1354,10 @@
     {
         "merged": "G:\\1397-02-04\\RecyclerViewMysqlVolley\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notify_panel_notification_icon_bg.png.flat",
         "source": "C:\\Users\\Hamed\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.4.0.aar\\0d6a6edf08316bb28a65450f36cfdf3a\\res\\drawable-xhdpi-v4\\notify_panel_notification_icon_bg.png"
+    },
+    {
+        "merged": "G:\\1397-02-04\\RecyclerViewMysqlVolley\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_delete.png.flat",
+        "source": "G:\\1397-02-04\\RecyclerViewMysqlVolley\\app\\src\\main\\res\\drawable-mdpi\\ic_delete.png"
     },
     {
         "merged": "G:\\1397-02-04\\RecyclerViewMysqlVolley\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",

@@ -16,6 +16,13 @@
         android:icon="@drawable/ic_mojodi"
         app:showAsAction="always"
         ></item>
+    <item android:title="Delete"
+        android:id="@+id/Delete"
+        android:icon="@drawable/ic_delete"
+        app:showAsAction="always"
+        ></item>
+
+
 
 
 

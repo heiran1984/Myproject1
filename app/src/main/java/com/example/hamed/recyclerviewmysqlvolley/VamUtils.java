@@ -5,7 +5,7 @@ package com.example.hamed.recyclerviewmysqlvolley;
  */
 
 public class VamUtils {
-    private int id;
+    private int id,code;
     private String username;
     private int mvam;
     private int taghsat;
@@ -14,6 +14,14 @@ public class VamUtils {
     private int maghsat;
     private String tozihat;
     private String tarikh;
+
+    public int getcode() {
+        return code;
+    }
+
+    public void setcode(int code) {
+        this.code = code;
+    }
 
     public String gettarikh() {
         return tarikh;

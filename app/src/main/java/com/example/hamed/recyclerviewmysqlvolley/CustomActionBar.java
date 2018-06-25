@@ -31,7 +31,7 @@ public class CustomActionBar{
         textview.setGravity(Gravity.CENTER);
         textview.setTextColor(Color.parseColor("#000000"));
         textview.setTypeface(typeface);
-        textview.setTextSize(25);
+        textview.setTextSize(18);
         actionBar.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
         actionBar.setCustomView(textview);
 

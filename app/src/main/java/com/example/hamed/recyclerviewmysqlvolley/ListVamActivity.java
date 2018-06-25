@@ -3,6 +3,8 @@ package com.example.hamed.recyclerviewmysqlvolley;
 import android.app.SearchManager;
 import android.content.Context;
 import android.os.Bundle;
+import android.support.design.widget.BottomSheetBehavior;
+import android.support.design.widget.CoordinatorLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -11,6 +13,7 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
@@ -19,6 +22,7 @@ import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
+import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
 import org.json.JSONArray;
@@ -28,7 +32,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ListVamActivity extends MyActivity {
+public class ListVamActivity extends MyActivity implements View.OnClickListener {
 
 
     RecyclerView recyclerView;
@@ -38,13 +42,27 @@ public class ListVamActivity extends MyActivity {
     ProgressBar progressBar;
     List<VamUtils> vamUtilsList,filteredlist;
     String username="all";
+    CoordinatorLayout coordinatorLayout;
+    View persistentbottomSheet;
+    LinearLayout delVam,tasfiyaVam;
+    BottomSheetBehavior behavior;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_vam);
+        coordinatorLayout = (CoordinatorLayout) findViewById(R.id.coordinator);
+
+        persistentbottomSheet = coordinatorLayout.findViewById(R.id.bottomsheet);
+        delVam=(LinearLayout)persistentbottomSheet.findViewById(R.id.delVam);
+        tasfiyaVam=(LinearLayout)persistentbottomSheet.findViewById(R.id.tasviyaVam);
+
+        behavior = BottomSheetBehavior.from(persistentbottomSheet);
+
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
+
 
         progressBar=(ProgressBar)findViewById(R.id.progressbar1);
         recyclerView = (RecyclerView) findViewById(R.id.recycleViewVam);
@@ -79,6 +97,7 @@ public class ListVamActivity extends MyActivity {
                             try {
                                 JSONObject jsonObject = response.getJSONObject(i);
                                 vamUtils.setId(i+1);
+                                vamUtils.setcode(jsonObject.getInt("id"));
                                 vamUtils.setUsername(jsonObject.getString("username"));
                                 vamUtils.setMvam(jsonObject.getInt("m_vam"));
                                 vamUtils.setTaghsat(jsonObject.getInt("t_aghsat"));
@@ -113,6 +132,33 @@ public class ListVamActivity extends MyActivity {
         });
         RequestQueue requestQueue= Volley.newRequestQueue(this);
         requestQueue.add(jsonArrayRequest);
+    }
+
+    public void ShowMenu(final int position){
+       // new MyBottomSheetDialogFragment().show(getSupportFragmentManager(),MyActivity.class.getSimpleName());
+        delVam.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(vamUtilsList.get(position).getTpardakhtshoda()==0){
+                    deletevam(position);
+
+                }
+
+            }
+        });
+        tasfiyaVam.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                tasfiya(position);
+
+            }
+
+        });
+        if (behavior.getState() == BottomSheetBehavior.STATE_COLLAPSED) {
+            behavior.setState(BottomSheetBehavior.STATE_EXPANDED);
+        } else {
+            behavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
+        }
     }
 
     @Override
@@ -151,4 +197,79 @@ public class ListVamActivity extends MyActivity {
         });
         return true;
     }
+
+
+
+    @Override
+    public void onClick(View v) {
+        if (behavior.getState() == BottomSheetBehavior.STATE_EXPANDED)
+            behavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
+
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (behavior.getState() == BottomSheetBehavior.STATE_EXPANDED)
+            behavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
+        else
+        super.onBackPressed();
+    }
+    public void deletevam(final int position){
+        StringRequest stringRequest=new StringRequest(Request.Method.POST,
+                Constans.URL_DELVAM+"?string="+vamUtilsList.get(position).getcode(),
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        vamUtilsList.remove(position);
+                        mAdapter.notifyItemRemoved(position);
+                        behavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
+                        int i;
+                        for(i=0;i<vamUtilsList.size();i++) {
+                            vamUtilsList.get(i).setId(i + 1);
+                            mAdapter.notifyItemChanged(i);
+                        }
+                        Toast.makeText(getApplicationContext(),"حذف شد",Toast.LENGTH_SHORT).show();
+
+                    }
+                },new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Toast.makeText(getApplicationContext(),error.getMessage(),Toast.LENGTH_LONG).show();
+            }
+        });
+
+        RequestQueue requestQueue= Volley.newRequestQueue(this);
+        requestQueue.add(stringRequest);
+    }
+
+    public void tasfiya(final int position){
+        StringRequest stringRequest=new StringRequest(Request.Method.POST,
+                Constans.URL_TASFIYAVAM+"?string="+vamUtilsList.get(position).getcode(),
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+
+                        vamUtilsList.remove(position);
+                        mAdapter.notifyItemRemoved(position);
+                        behavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
+                        int i;
+                        for(i=0;i<vamUtilsList.size();i++) {
+                            vamUtilsList.get(i).setId(i + 1);
+                            mAdapter.notifyItemChanged(i);
+                        }
+                        Toast.makeText(getApplicationContext(),"تسویه شد",Toast.LENGTH_SHORT).show();
+
+                    }
+                },new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Toast.makeText(getApplicationContext(),error.getMessage(),Toast.LENGTH_LONG).show();
+            }
+        });
+
+        RequestQueue requestQueue= Volley.newRequestQueue(this);
+        requestQueue.add(stringRequest);
+    }
+
+
 }

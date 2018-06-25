@@ -17,6 +17,7 @@ import java.util.List;
 public class VamRecyclerAdapter extends RecyclerView.Adapter<VamRecyclerAdapter.ViewHolder> {
 
     private Context context;
+    private ListVamActivity listVamActivity;
     private List<VamUtils> VamUtils;
     private DecimalFormat formatter=new DecimalFormat("#,###,###");
    // Typeface typeface;
@@ -24,13 +25,14 @@ public class VamRecyclerAdapter extends RecyclerView.Adapter<VamRecyclerAdapter.
     public VamRecyclerAdapter(Context context, List VamUtils) {
         this.context =context;
         this.VamUtils = VamUtils;
+        this.listVamActivity=(ListVamActivity)context;
        // this.typeface=Typeface.createFromAsset(context.getAssets(),"IRANSansMobile.ttf");
     }
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.single_vam_item, parent, false);
-        ViewHolder viewHolder = new ViewHolder(v);
+        ViewHolder viewHolder = new ViewHolder(v,listVamActivity);
         return viewHolder;
     }
 
@@ -60,7 +62,7 @@ public class VamRecyclerAdapter extends RecyclerView.Adapter<VamRecyclerAdapter.
         return VamUtils.size();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder{
+    public class ViewHolder extends RecyclerView.ViewHolder implements View.OnLongClickListener{
 
         public TextView id;
         public TextView username;
@@ -71,7 +73,8 @@ public class VamRecyclerAdapter extends RecyclerView.Adapter<VamRecyclerAdapter.
         public TextView maghsat;
         public TextView tarikh;
         public CardView VamcardView;
-        public ViewHolder(final View itemView) {
+        ListVamActivity listVamActivity;
+        public ViewHolder(final View itemView,ListVamActivity listVamActivity) {
             super(itemView);
 
 
@@ -84,6 +87,9 @@ public class VamRecyclerAdapter extends RecyclerView.Adapter<VamRecyclerAdapter.
             maghsat=(TextView)itemView.findViewById(R.id.maghsat);
             tarikh=(TextView)itemView.findViewById(R.id.tarikh);
             VamcardView=(CardView)itemView.findViewById(R.id.card_view);
+            this.listVamActivity=listVamActivity;
+            VamcardView.setOnLongClickListener(this);
+            VamcardView.setOnClickListener(listVamActivity);
 
 
           //  id.setTypeface(typeface);
@@ -95,6 +101,13 @@ public class VamRecyclerAdapter extends RecyclerView.Adapter<VamRecyclerAdapter.
           //  maghsat.setTypeface(typeface);
            // tarikh.setTypeface(typeface);
 
+        }
+
+        @Override
+        public boolean onLongClick(View v) {
+            if(v.getId()==R.id.card_view)
+                listVamActivity.ShowMenu(getAdapterPosition());
+            return true;
         }
     }
 

@@ -13,6 +13,9 @@
         android:layout_gravity="center"
         android:layout_margin="5dp"
         card_view:contentPadding="5dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
         >
 
         <LinearLayout
