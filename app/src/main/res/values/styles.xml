@@ -28,8 +28,9 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="splashScreenTheme" parent="@android:style/Theme.Light.NoTitleBar.Fullscreen">
-        <item name="android:windowBackground">@color/colorPrimaryDark</item>
+    <style name="splashScreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+
     </style>
 
 </resources>

@@ -6,6 +6,8 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.TextView;
 
 public class Welcom extends AppCompatActivity {
@@ -16,21 +18,33 @@ public class Welcom extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_welcom);
-        Typeface typeface=Typeface.createFromAsset(getAssets(),"fonts/IranNastaliq.ttf");
+        //setContentView(R.layout.activity_welcom);
 
-        wellcom=(TextView)findViewById(R.id.wellcom);
-        wellcom.setTypeface(typeface);
-        FullScreencall();
+        if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.KITKAT){
+            Window w=getWindow();
+            w.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
+        }
+       // Typeface typeface=Typeface.createFromAsset(getAssets(),"fonts/IranNastaliq.ttf");
 
-       Thread mySplash=new Thread(){
+     //  wellcom=(TextView)findViewById(R.id.wellcom);
+     //   wellcom.setTypeface(typeface);
+      // FullScreencall();
+
+      Thread mySplash=new Thread(){
             @Override
             public void run() {
                 try {
                     sleep(1500);
-                    Intent i=new Intent(getApplicationContext(),LoginActivity.class);
-                    startActivity(i);
-                    finish();
+                    if(SharedPrefManager.getInstance(getApplicationContext()).isLoggedIn()){
+                       Intent i=new Intent(getApplicationContext(),MainActivity.class);
+                       startActivity(i);
+                       finish();
+                    }
+                    else{
+                        Intent i=new Intent(getApplicationContext(),LoginActivity.class);
+                        startActivity(i);
+                        finish();
+                    }
 
                 } catch (InterruptedException e) {
                     e.printStackTrace();

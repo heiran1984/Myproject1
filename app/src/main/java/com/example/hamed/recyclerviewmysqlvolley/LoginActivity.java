@@ -37,11 +37,11 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         new  CustomActionBar(this,getSupportActionBar(),"ورود");
 
         context=this;
-        if(SharedPrefManager.getInstance(this).isLoggedIn()){
+       /* if(SharedPrefManager.getInstance(this).isLoggedIn()){
             finish();
             startActivity(new Intent(this,MainActivity.class));
             return;
-        }
+        }*/
 
         progressBar=(ProgressBar)findViewById(R.id.progressbar1);
 

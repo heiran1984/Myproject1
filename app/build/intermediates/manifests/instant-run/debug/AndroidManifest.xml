@@ -22,7 +22,7 @@
         android:theme="@style/AppTheme2" >
         <activity
             android:name="com.example.hamed.recyclerviewmysqlvolley.Welcom"
-            android:theme="@style/AppTheme" >
+            android:theme="@style/splashScreenTheme" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -89,7 +89,7 @@ MERGED from [com.android.support:support-compat:25.4.0] C:\Users\Hamed\.gradle\c
 activity#com.example.hamed.recyclerviewmysqlvolley.Welcom
 ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:16:9-22:20
 	android:theme
-		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:16:42-73
+		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:16:42-82
 	android:name
 		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:16:19-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER

@@ -729,7 +729,8 @@ int drawable notification_template_icon_low_bg 0x7f07007c
 int drawable notification_tile_bg 0x7f07007d
 int drawable notify_panel_notification_icon_bg 0x7f07007e
 int drawable search 0x7f07007f
-int drawable sss 0x7f070080
+int drawable splash_background 0x7f070080
+int drawable sss 0x7f070081
 int id Add 0x7f080000
 int id Delete 0x7f080001
 int id Edit 0x7f080002
