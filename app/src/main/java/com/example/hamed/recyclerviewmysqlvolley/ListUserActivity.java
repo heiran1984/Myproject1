@@ -146,7 +146,7 @@ public class ListUserActivity extends MyActivity implements View.OnLongClickList
             Codes.clear();
             tozihat1.clear();
             position1.clear();
-            params.setScrollFlags(AppBarLayout.LayoutParams.SCROLL_FLAG_SCROLL|AppBarLayout.LayoutParams.SCROLL_FLAG_ENTER_ALWAYS);
+            //params.setScrollFlags(AppBarLayout.LayoutParams.SCROLL_FLAG_SCROLL|AppBarLayout.LayoutParams.SCROLL_FLAG_ENTER_ALWAYS);
             mAdapter.notifyDataSetChanged();
         }
         if(item.getItemId()==R.id.Add){
@@ -297,6 +297,8 @@ public class ListUserActivity extends MyActivity implements View.OnLongClickList
 
     public void clearActionMode(){
         is_in_action_mode=false;
+        if (snackbar!=null) snackbar.dismiss();
+
         toolbar.getMenu().clear();
         invalidateOptionsMenu();
         getSupportActionBar().setDisplayHomeAsUpEnabled(false);
@@ -310,7 +312,7 @@ public class ListUserActivity extends MyActivity implements View.OnLongClickList
         for(i=0;i<personUtilsList.size();i++){
             personUtilsList.get(i).setchecked(false);
         }
-        params.setScrollFlags(AppBarLayout.LayoutParams.SCROLL_FLAG_SCROLL|AppBarLayout.LayoutParams.SCROLL_FLAG_ENTER_ALWAYS);
+       // params.setScrollFlags(AppBarLayout.LayoutParams.SCROLL_FLAG_SCROLL|AppBarLayout.LayoutParams.SCROLL_FLAG_ENTER_ALWAYS);
         mAdapter.notifyDataSetChanged();
     }
 
@@ -338,7 +340,6 @@ public class ListUserActivity extends MyActivity implements View.OnLongClickList
 
         if(is_in_action_mode){
             clearActionMode();
-
         }
         else{
             super.onBackPressed();
@@ -405,6 +406,7 @@ public class ListUserActivity extends MyActivity implements View.OnLongClickList
         super.onStart();
         if(is_in_action_mode){
             clearActionMode();
+            snackbar.dismiss();
             recyclerView.getLayoutManager().onRestoreInstanceState(recyclerViewState);
         }
       //  if(personUtilsList.size()!=filteredList.size()){

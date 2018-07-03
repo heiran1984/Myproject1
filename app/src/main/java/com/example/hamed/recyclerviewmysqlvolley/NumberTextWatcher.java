@@ -26,7 +26,7 @@ public class NumberTextWatcher implements TextWatcher {
         et.removeTextChangedListener(this);
         if(et.length()!=0) {
             String b1 = et.getText().toString().replace(",", "");
-            et.setText(formatter.format(parseInt(b1)));
+            et.setText(formatter.format(Long.parseLong(b1)));
             et.setSelection(et.getText().length());
         }
         et.addTextChangedListener(this);

@@ -30,6 +30,8 @@
 
     <style name="splashScreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:windowBackground">@drawable/splash_background</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
 
     </style>
 

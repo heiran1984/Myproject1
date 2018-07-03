@@ -7,7 +7,7 @@ package com.example.hamed.recyclerviewmysqlvolley;
 public class VamUtils {
     private int id,code;
     private String username;
-    private int mvam;
+    private long mvam;
     private int taghsat;
     private int mandavam;
     private int tpardakhtshoda;
@@ -63,7 +63,7 @@ public class VamUtils {
         this.username = username;
     }
 
-    public int getMvam() {
+    public long getMvam() {
         return mvam;
     }
 

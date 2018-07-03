@@ -118,7 +118,7 @@ public class CustomRecyclerAdapter extends RecyclerView.Adapter<CustomRecyclerAd
 
         holder.userid.setText(Integer.toString(pu.getid()));
         holder.username.setText(pu.getusername());
-        holder.mojodi.setText(formatter.format(pu.getmojodi()));
+        holder.mojodi.setText(formatter.format(pu.getmojodi())+"ریال");
         if(!listUserActivity.is_in_action_mode){
             holder.checkBox.setVisibility(View.GONE);
         }

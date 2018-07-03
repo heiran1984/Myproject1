@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -41,9 +42,10 @@ public class NewVamActivity extends MyActivity implements View.OnClickListener {
     EditText editTextTAghsat;
     EditText editTextMAghsat;
     EditText editTextMPardakhtshoda;
+    CheckBox next_mah;
     Button buttonNewVam;
     String mizan,mvam;
-    int MojodiSandogh;
+    long  MojodiSandogh;
     String t_pardakhtshoda="0",tozihat="";
     JSONArray jsonArray;
     ArrayList<String> Codes;
@@ -54,6 +56,7 @@ public class NewVamActivity extends MyActivity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_vam);
         new  CustomActionBar(this,getSupportActionBar(),"");
+        next_mah=(CheckBox)findViewById(R.id.next_mah);
 
         editTextUsername=(EditText)findViewById(R.id.editTextUsername);
         editTextMVame=(EditText)findViewById(R.id.editTextMVam);
@@ -92,6 +95,7 @@ public class NewVamActivity extends MyActivity implements View.OnClickListener {
         final String username=editTextUsername.getText().toString().trim();
         final String taghsat=editTextTAghsat.getText().toString().trim();
         final String maghsat=(editTextMAghsat.getText().toString().trim()).replace(",","");
+        final String tf="1";
         //final String t_pardakhtshoda="0";
 
         StringRequest stringRequest=new StringRequest(Request.Method.POST,
@@ -124,6 +128,7 @@ public class NewVamActivity extends MyActivity implements View.OnClickListener {
                 params.put("t_pardakhtshoda",t_pardakhtshoda);
                 params.put("tozihat",tozihat);
                 params.put("codes",jsonArray.toString());
+                params.put("next_mah",String.valueOf(next_mah.isChecked()));
                 return params;
             }
         };
@@ -144,6 +149,7 @@ public class NewVamActivity extends MyActivity implements View.OnClickListener {
         if(a<=MojodiSandogh){
            if(((b*c)==a) && (d%b==0) && (d<=a)) {
                t_pardakhtshoda=Integer.toString(d/b);
+               Toast.makeText(getApplicationContext(),String.valueOf(next_mah.isChecked()),Toast.LENGTH_SHORT).show();
                newVam();
            }
 
@@ -180,7 +186,7 @@ public class NewVamActivity extends MyActivity implements View.OnClickListener {
                             editTextMVame.addTextChangedListener(mTextEditorWatcher1);
                             editTextTAghsat.setText(formatter.format(taghsat));
                             editTextMAghsat.setText(formatter.format(vam/taghsat));
-                            MojodiSandogh=obj.getInt("smojodi");
+                            MojodiSandogh=obj.getLong("smojodi");
                             actionbarMojodi();
 
                         } catch (JSONException e) {
@@ -219,9 +225,9 @@ public class NewVamActivity extends MyActivity implements View.OnClickListener {
         public void afterTextChanged(Editable s) {
 
            editTextTAghsat.removeTextChangedListener(this);
-            int a;
+            long a;
             if(editTextTAghsat.length()!=0) {
-                a = parseInt(editTextMVame.getText().toString().replace(",", ""));
+                a = Long.parseLong(editTextMVame.getText().toString().replace(",", ""));
                 String b1 = editTextTAghsat.getText().toString().replace(",", "");
                 editTextTAghsat.setText(formatter.format(parseInt(b1)));
                 editTextTAghsat.setSelection(editTextTAghsat.getText().length());
@@ -248,9 +254,9 @@ public class NewVamActivity extends MyActivity implements View.OnClickListener {
         public void afterTextChanged(Editable s) {
 
             editTextMVame.removeTextChangedListener(this);
-            int a;
+            long a;
             if(editTextMVame.length()!=0) {
-                a = parseInt(editTextMVame.getText().toString().replace(",", ""));
+                a = Long.parseLong(editTextMVame.getText().toString().replace(",", ""));
                 String b1 = editTextTAghsat.getText().toString().replace(",", "");
                 editTextMVame.setText(formatter.format(a));
                 editTextMVame.setSelection(editTextMVame.getText().length());

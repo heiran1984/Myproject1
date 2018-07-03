@@ -50,7 +50,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:background="@drawable/bottom_border"
-            android:inputType="number" />
+            android:inputType="number"
+            android:maxLength="12"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -64,6 +65,7 @@
             android:layout_gravity="center"
             android:background="@drawable/bottom_border"
             android:inputType="number"
+            android:maxLength="3"
 
             />
 
@@ -79,6 +81,7 @@
             android:layout_gravity="center"
             android:background="@drawable/bottom_border"
             android:inputType="number"
+            android:maxLength="2"
 
             />
 

@@ -1,28 +1,31 @@
 package com.example.hamed.recyclerviewmysqlvolley;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.ColorRes;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Welcom extends AppCompatActivity {
 
     TextView wellcom;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //setContentView(R.layout.activity_welcom);
 
-        if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.KITKAT){
+
+       if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.LOLLIPOP){
             Window w=getWindow();
-            w.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
+
+           w.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
         }
        // Typeface typeface=Typeface.createFromAsset(getAssets(),"fonts/IranNastaliq.ttf");
 

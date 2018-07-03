@@ -12,6 +12,7 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.TextWatcher;
 import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -34,7 +35,7 @@ import org.json.JSONObject;
 import java.text.DecimalFormat;
 
 public class MainActivity extends MyActivity implements NavigationView.OnNavigationItemSelectedListener {
-    TextView Tarikh,Mojodi,TOzv,TWam;
+    TextView Tarikh,Mojodi,TOzv,TWam,MojodiOzv;
     DecimalFormat formatter=new DecimalFormat("#,###,###");
     ProgressBar progressBar;
     private DrawerLayout mDrawerLayout;
@@ -42,6 +43,8 @@ public class MainActivity extends MyActivity implements NavigationView.OnNavigat
     RelativeLayout.LayoutParams layoutparams;
     private int itemId=-1;
     private Context context;
+    int tozv,twam;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -95,6 +98,8 @@ public class MainActivity extends MyActivity implements NavigationView.OnNavigat
         progressBar=(ProgressBar)findViewById(R.id.progressbar1);
         Tarikh=(TextView) findViewById(R.id.Tarikh);
         Mojodi=(TextView)findViewById(R.id.Mojodi);
+        MojodiOzv=(TextView)findViewById(R.id.MojodiOzv);
+
         TOzv=(TextView)findViewById(R.id.TOzv);
         TWam=(TextView)findViewById(R.id.TٌWam);
      //   Tarikh.setTypeface(typeface);
@@ -144,11 +149,14 @@ public class MainActivity extends MyActivity implements NavigationView.OnNavigat
                         try {
                             progressBar.setVisibility(View.INVISIBLE);
                             JSONObject obj=new JSONObject(response);
-                            int MojodiSandogh,tozv,twam;
-                            MojodiSandogh=obj.getInt("smojodi");
+                            long MojodiSandogh,MojodiOzv1;
+                            MojodiSandogh=obj.getLong("smojodi");
+                            MojodiOzv1=obj.getLong("mozv");
                             tozv=obj.getInt("tozv");
                             twam=obj.getInt("twam");
                             Mojodi.setText("موجودی صندوق="+formatter.format(MojodiSandogh));
+                            MojodiOzv.setText("موجودی اعضاء="+formatter.format(MojodiOzv1));
+
                             TOzv.setText("تعداد اعضا="+formatter.format(tozv));
                             TWam.setText("تعداد وام="+formatter.format(twam));
                             String str[]=obj.getString("tarikh").split("-");
@@ -251,8 +259,9 @@ public class MainActivity extends MyActivity implements NavigationView.OnNavigat
                 updateMojodi();
                 break;
             case R.id.Vam:
+                if(twam!=0){
                 intent=new Intent(this,ListVamActivity.class);
-                startActivity(intent);
+                startActivity(intent);}
                 break;
             case R.id.Setting:
                 intent=new Intent(this,SettingActivity.class);
@@ -268,8 +277,8 @@ public class MainActivity extends MyActivity implements NavigationView.OnNavigat
                 break;
             case R.id.LogOut:
                 SharedPrefManager.getInstance(this).logout();
-                finish();
                 startActivity(new Intent(this,LoginActivity.class));
+                finish();
                 break;
         }
         mDrawerLayout.closeDrawers();

@@ -35,6 +35,7 @@
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:text="وام گیرنده:"
+                android:textAlignment="viewEnd"
                 android:textAppearance="@android:style/TextAppearance.Widget.TabWidget" />
 
             <EditText
@@ -56,6 +57,7 @@
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:text="مبلغ وام:"
+                android:textAlignment="viewEnd"
                 android:textAppearance="@android:style/TextAppearance.Widget.TabWidget" />
 
             <EditText
@@ -64,6 +66,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/bottom_border"
                 android:inputType="number"
+                android:maxLength="15"
                 android:textAlignment="textStart" />
         </LinearLayout>
         <LinearLayout
@@ -78,6 +81,7 @@
                 android:gravity="center"
 
                 android:text="تعداد اقساط:"
+                android:textAlignment="viewEnd"
                 android:textAppearance="@android:style/TextAppearance.Widget.TabWidget" />
 
             <EditText
@@ -100,6 +104,7 @@
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:text="مبلغ هر قسط:"
+                android:textAlignment="viewEnd"
                 android:textAppearance="@android:style/TextAppearance.Widget.TabWidget" />
 
             <EditText
@@ -121,6 +126,7 @@
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:text="مبلغ پرداخت شده:"
+                android:textAlignment="viewEnd"
                 android:textAppearance="@android:style/TextAppearance.Widget.TabWidget" />
 
             <EditText
@@ -132,6 +138,11 @@
                 android:text="0"
                 android:textAlignment="textStart" />
         </LinearLayout>
+        <CheckBox
+            android:id="@+id/next_mah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="اقساط از ماه بعد کم شود."/>
     </LinearLayout>
 
     </ScrollView>

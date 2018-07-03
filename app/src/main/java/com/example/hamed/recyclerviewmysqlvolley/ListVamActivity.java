@@ -2,8 +2,10 @@ package com.example.hamed.recyclerviewmysqlvolley;
 
 import android.app.SearchManager;
 import android.content.Context;
+import android.graphics.Rect;
 import android.os.Bundle;
 import android.support.design.widget.BottomSheetBehavior;
+import android.support.design.widget.BottomSheetDialog;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -12,9 +14,12 @@ import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
+import android.view.MotionEvent;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.Request;
@@ -46,6 +51,7 @@ public class ListVamActivity extends MyActivity implements View.OnClickListener 
     View persistentbottomSheet;
     LinearLayout delVam,tasfiyaVam;
     BottomSheetBehavior behavior;
+    BottomSheetDialog dialog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -135,7 +141,11 @@ public class ListVamActivity extends MyActivity implements View.OnClickListener 
     }
 
     public void ShowMenu(final int position){
-       // new MyBottomSheetDialogFragment().show(getSupportFragmentManager(),MyActivity.class.getSimpleName());
+
+        openDialog(position);
+
+        //new MyBottomSheetDialogFragment().show(getSupportFragmentManager(),MyActivity.class.getSimpleName());
+        /*
         delVam.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -156,9 +166,11 @@ public class ListVamActivity extends MyActivity implements View.OnClickListener 
         });
         if (behavior.getState() == BottomSheetBehavior.STATE_COLLAPSED) {
             behavior.setState(BottomSheetBehavior.STATE_EXPANDED);
+
         } else {
             behavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
         }
+        */
     }
 
     @Override
@@ -271,5 +283,34 @@ public class ListVamActivity extends MyActivity implements View.OnClickListener 
         requestQueue.add(stringRequest);
     }
 
+    private void openDialog(final int position) {
+        View view = getLayoutInflater().inflate(R.layout.dialog_bottomsheet, null);
+        dialog = new BottomSheetDialog(this);
+        dialog.setContentView(view);
+        dialog.getWindow().setDimAmount(0.2f);
+
+        LinearLayout delVam = (LinearLayout) view.findViewById(R.id.delVam);
+        LinearLayout tasfiyaVam = (LinearLayout) view.findViewById(R.id.tasviyaVam);
+        delVam.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(vamUtilsList.get(position).getTpardakhtshoda()==0){
+                deletevam(position);
+                dialog.dismiss();
+                }
+            }
+        });
+        tasfiyaVam.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                tasfiya(position);
+                dialog.dismiss();
+            }
+        });
+        dialog.show();
+    }
+
 
 }
+
+
