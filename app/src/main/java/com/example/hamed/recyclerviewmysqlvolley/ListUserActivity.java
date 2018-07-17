@@ -60,7 +60,7 @@ public class ListUserActivity extends MyActivity implements View.OnLongClickList
     Snackbar snackbar;
     private CoordinatorLayout coordinatorLayout;
     int count=0,position,update=0,displayvam=0;
-    String username,tozihat="";
+    String username,username1="all";
     AppBarLayout.LayoutParams params;
     public List<PersonUtils> personUtilsList,filteredList;
     ArrayList<String> Codes=new ArrayList<>();
@@ -93,14 +93,19 @@ public class ListUserActivity extends MyActivity implements View.OnLongClickList
         mAdapter = new CustomRecyclerAdapter(ListUserActivity.this, personUtilsList);
        // recyclerView.setAdapter(mAdapter);
        // sendRequest();
-
+       counter.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               Toast.makeText(getApplicationContext(),"test",Toast.LENGTH_LONG).show();
+           }
+       });
 
 
     }
 
     public void sendRequest(){
         JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(
-                Request.Method.POST, Constans.GET_USER, null,
+                Request.Method.POST, Constans.GET_USER+"?string="+username1, null,
                 new Response.Listener<JSONArray>() {
                     @Override
                     public void onResponse(JSONArray response) {
@@ -174,6 +179,10 @@ public class ListUserActivity extends MyActivity implements View.OnLongClickList
             if(position1.size()==1)
                 if(personUtilsList.get(position1.get(0)).getwam()!=1)
                 deleteuser(position1.get(0));
+        }
+        if(item.getItemId()==R.id.Variz){
+            if(position1.size()==1)
+                    Variz(position1.get(0));
         }
         return true;
     }
@@ -284,6 +293,16 @@ public class ListUserActivity extends MyActivity implements View.OnLongClickList
         this.startActivity(intent);
 
     }
+    public void Variz(int position){
+        snackbar.dismiss();
+        Intent intent;
+        intent=new Intent(this,VarizActivity.class);
+        intent.putExtra("USERNAME",personUtilsList.get(position).getusername().toString());
+        intent.putExtra("CODE",personUtilsList.get(position).getCode());
+        this.startActivity(intent);
+
+    }
+
 
     private void updateCounter(int count) {
         if(count==0){
@@ -454,9 +473,9 @@ public class ListUserActivity extends MyActivity implements View.OnLongClickList
         is_in_action_mode=true;
         toolbar.getMenu().clear();
         toolbar.inflateMenu(R.menu.menu_action_mode);
-        counter.setVisibility(View.VISIBLE);
+       // counter.setVisibility(View.VISIBLE);
         mAdapter.notifyDataSetChanged();
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         return true;
     }
 

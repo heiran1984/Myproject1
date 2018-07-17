@@ -1,59 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup_window"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
     <LinearLayout
-
-        android:id="@+id/bottomsheet"
-        android:layoutDirection="rtl"
+        android:id="@+id/delVam"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:background="@color/colorPrimary"
-        android:orientation="vertical"
-        android:paddingBottom="@dimen/inbetween_space"
-        android:paddingLeft="@dimen/activity_vertical_margin"
-        android:paddingRight="@dimen/activity_vertical_margin"
-        android:paddingTop="@dimen/inbetween_space"
-
-        >
-        <LinearLayout
-            android:id="@+id/delVam"
-            android:clickable="true"
-            android:foreground="?attr/selectableItemBackground"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/bs_item_height"
-            android:gravity="center_vertical"
-            android:orientation="horizontal">
+        android:layout_height="@dimen/bs_item_height"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
 
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/activity_vertical_margin"
-                android:text="حذف"
-                android:textAlignment="center"
-                android:textColor="@android:color/white"
-                android:textStyle="bold" />
-
-        </LinearLayout>
-        <LinearLayout
-            android:id="@+id/tasviyaVam"
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:orientation="horizontal">
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:text="حذف"
+            android:textAlignment="center"
+            android:textColor="#ff0000"
+            android:textStyle="bold" />
 
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/activity_vertical_margin"
-                android:text="تسویه"
-                android:textAlignment="center"
-                android:textColor="@android:color/white"
-                android:textStyle="bold" />
-
-        </LinearLayout>
     </LinearLayout>
-</FrameLayout>
+    <LinearLayout
+        android:id="@+id/tasviyaVam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:text="تسویه"
+            android:textAlignment="center"
+            android:textColor="#ff0000"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -212,7 +212,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="تعداداقساط پرداخت شده:"
+                        android:text="تعداداقساط مانده:"
                         android:textColor="@android:color/black"
                         android:textStyle="bold" />
 

@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:2:1-39:12
+ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:2:1-43:12
 MERGED from [com.android.support:design:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\design-25.4.0.aar\cf2f4af592b8845da4e7c4a51d376344\AndroidManifest.xml:17:1-31:12
 MERGED from [uk.co.chrisjenx:calligraphy:2.3.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\calligraphy-2.3.0.aar\000431f121252bf2b2d508592cae5045\AndroidManifest.xml:2:1-13:12
 MERGED from [com.android.support:appcompat-v7:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.4.0.aar\0d6a6edf08316bb28a65450f36cfdf3a\AndroidManifest.xml:17:1-31:12
@@ -19,20 +19,20 @@ MERGED from [com.android.support:support-media-compat:25.4.0] C:\Users\Hamed\.gr
 MERGED from [com.android.support:support-core-utils:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.4.0.aar\f4d93eb56b8dee1f2bda15df714c53f1\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-vector-drawable:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.4.0.aar\b73876d5c3abc80876e1b43c114748dd\AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:support-compat:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-compat-25.4.0.aar\3781c3d62af23d97975ebbbf71582774\AndroidManifest.xml:17:1-31:12
-INJECTED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:2:1-43:12
 	package
 		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:3:5-56
 		INJECTED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml
 		INJECTED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml
-		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:2:1-39:12
+		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:2:1-43:12
 		INJECTED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml
-		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:2:1-39:12
+		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:2:1-43:12
 		INJECTED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:2:11-69
@@ -41,7 +41,7 @@ ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xm
 	android:name
 		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:5:22-64
 application
-ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:7:5-37:19
+ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:7:5-41:19
 MERGED from [com.android.support:design:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\design-25.4.0.aar\cf2f4af592b8845da4e7c4a51d376344\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:design:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\design-25.4.0.aar\cf2f4af592b8845da4e7c4a51d376344\AndroidManifest.xml:25:5-29:19
 MERGED from [uk.co.chrisjenx:calligraphy:2.3.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\calligraphy-2.3.0.aar\000431f121252bf2b2d508592cae5045\AndroidManifest.xml:11:5-20
@@ -73,75 +73,79 @@ MERGED from [com.android.support:support-vector-drawable:25.4.0] C:\Users\Hamed\
 MERGED from [com.android.support:support-compat:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-compat-25.4.0.aar\3781c3d62af23d97975ebbbf71582774\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-compat:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-compat-25.4.0.aar\3781c3d62af23d97975ebbbf71582774\AndroidManifest.xml:25:5-29:19
 	android:supportsRtl
-		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:12:9-35
+		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:13:9-35
 	android:label
-		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:10:9-41
+		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:11:9-41
 	android:roundIcon
-		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:11:9-54
+		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:12:9-54
 	android:icon
-		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:9:9-43
+		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:10:9-43
 	android:allowBackup
-		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:8:9-35
+		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:9:9-35
 	android:theme
 		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:14:9-41
 	android:name
-		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:13:9-30
+		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:8:9-30
 activity#com.example.hamed.recyclerviewmysqlvolley.Welcom
-ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:16:9-22:20
+ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:15:9-23:20
 	android:theme
-		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:16:42-82
+		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:17:13-53
 	android:name
-		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:16:19-41
+		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:16:13-35
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:17:13-21:29
+ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:18:13-22:29
 action#android.intent.action.MAIN
-ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:18:17-69
+ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:19:17-69
 	android:name
-		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:18:25-66
+		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:19:25-66
 category#android.intent.category.LAUNCHER
-ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:20:17-77
+ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:21:17-77
 	android:name
-		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:20:27-74
+		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:21:27-74
 activity#com.example.hamed.recyclerviewmysqlvolley.NewVamActivity
-ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:23:9-24:58
+ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:24:9-26:58
 	android:windowSoftInputMode
-		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:24:14-56
+		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:26:13-55
 	android:name
-		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:23:19-49
+		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:25:13-43
 activity#com.example.hamed.recyclerviewmysqlvolley.ListVamActivity
-ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:25:9-27:48
+ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:27:9-29:48
 	android:theme
-		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:27:13-45
+		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:29:13-45
 	android:name
-		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:26:13-44
+		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:28:13-44
 activity#com.example.hamed.recyclerviewmysqlvolley.SettingActivity
-ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:28:9-53
+ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:30:9-53
 	android:name
-		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:28:19-50
+		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:30:19-50
 activity#com.example.hamed.recyclerviewmysqlvolley.NewMojodiActivity
-ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:29:9-55
+ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:31:9-55
 	android:name
-		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:29:19-52
+		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:31:19-52
 activity#com.example.hamed.recyclerviewmysqlvolley.NewOzvActivity
-ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:30:9-52
+ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:32:9-52
 	android:name
-		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:30:19-49
+		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:32:19-49
 activity#com.example.hamed.recyclerviewmysqlvolley.LoginActivity
-ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:31:9-51
+ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:33:9-51
 	android:name
-		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:31:19-48
+		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:33:19-48
 activity#com.example.hamed.recyclerviewmysqlvolley.ListUserActivity
-ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:33:9-35:48
+ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:34:9-36:48
 	android:theme
+		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:36:13-45
+	android:name
 		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:35:13-45
-	android:name
-		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:34:13-45
 activity#com.example.hamed.recyclerviewmysqlvolley.MainActivity
-ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:36:9-92
+ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:37:9-39:48
 	android:theme
-		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:36:48-80
+		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:39:13-45
 	android:name
-		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:36:19-47
+		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:38:13-41
+activity#com.example.hamed.recyclerviewmysqlvolley.VarizActivity
+ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:40:9-60
+	android:name
+		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:40:19-48
 uses-sdk
 INJECTED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml

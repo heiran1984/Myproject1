@@ -35,4 +35,19 @@
 
     </style>
 
+
+
+    <!--Style Material Dialog Bottom Sheet-->
+    <style name="MaterialDialogSheet" parent="Theme.Design.Light.BottomSheetDialog">
+
+        <item name="android:windowAnimationStyle">@style/MaterialDialogSheetAnimation</item>
+    </style>
+
+    <style name="MaterialDialogSheetAnimation">
+        <item name="android:windowEnterAnimation">@anim/popup_show</item>
+        <item name="android:windowExitAnimation">@anim/popup_hide</item>
+    </style>
+
+
+
 </resources>

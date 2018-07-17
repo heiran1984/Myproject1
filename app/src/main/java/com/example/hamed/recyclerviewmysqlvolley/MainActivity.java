@@ -1,7 +1,10 @@
 package com.example.hamed.recyclerviewmysqlvolley;
 
+import android.app.Dialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Build;
 import android.os.Bundle;
@@ -10,6 +13,7 @@ import android.support.design.widget.NavigationView;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.TextWatcher;
@@ -44,16 +48,34 @@ public class MainActivity extends MyActivity implements NavigationView.OnNavigat
     private int itemId=-1;
     private Context context;
     int tozv,twam;
+    String[] iraniMonthStr = new String[]{
 
+            "فروردین",
+            "اردیبهشت",
+            "خرداد",
+            "تیر",
+            "مرداد",
+            "شهریور",
+            "مهر",
+            "آبان",
+            "آذر",
+            "دی",
+            "بهمن",
+            "اسفند",
+    };
+    Typeface typeface;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-       // Typeface typeface=Typeface.createFromAsset(getAssets(),"B Nazanin Bold.ttf");
-       // new  CustomActionBar(this,getSupportActionBar(),"صندوق قرض الحسنه");
-        //new CustomToast(this,"واریز انجام شد");
+
+
+        typeface=Typeface.createFromAsset(getAssets(),"fonts/IRANSansMobile.ttf");
+
+
+
 
         context=this;
         Toolbar toolbar=(Toolbar)findViewById(R.id.toolbar);
@@ -110,7 +132,13 @@ public class MainActivity extends MyActivity implements NavigationView.OnNavigat
         /*if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             getWindow().setNavigationBarColor(ContextCompat.getColor(this, R.color.colorAccent));
         }*/
+        if(SharedPrefManager.getInstance(getApplicationContext()).HasMah()){
+            int mah=SharedPrefManager.getInstance(getApplicationContext()).getMah();
+            Menu menu=navigationView.getMenu();
+            MenuItem menuItem=menu.findItem(R.id.variz);
+            menuItem.setTitle("واریز "+iraniMonthStr[mah]);
 
+        }
 
     }
 
@@ -123,6 +151,13 @@ public class MainActivity extends MyActivity implements NavigationView.OnNavigat
                     public void onResponse(String response) {
 
                         new CustomToast(context,"واریز انجام شد");
+
+                        int mah=SharedPrefManager.getInstance(getApplicationContext()).getMah()+1;
+                        if(mah==12)mah=0;
+                        SharedPrefManager.getInstance(getApplicationContext()).AddMah(mah);
+                        Menu menu=navigationView.getMenu();
+                        MenuItem menuItem=menu.findItem(R.id.variz);
+                        menuItem.setTitle("واریز "+iraniMonthStr[mah]);
 
 
                         getMojodi();
@@ -181,6 +216,37 @@ public class MainActivity extends MyActivity implements NavigationView.OnNavigat
         requestQueue.add(stringRequest);
 
 
+    }
+
+    public void ShowDialog(){
+        TextView title = new TextView(this);
+        title.setText("انتخاب ماه واریز");
+        title.setTextColor(Color.RED);
+        title.setPadding(10, 10, 10, 10);
+        title.setGravity(Gravity.CENTER);
+        title.setTypeface(typeface);
+        title.setTextSize(23);
+
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+        builder.setCustomTitle(title)
+                .setItems(iraniMonthStr, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+
+                        String selectedCountry = iraniMonthStr[i];
+                        SharedPrefManager.getInstance(getApplicationContext()).AddMah(i);
+                        Menu menu=navigationView.getMenu();
+                        MenuItem menuItem=menu.findItem(R.id.variz);
+                        menuItem.setTitle("واریز "+selectedCountry);
+                    }
+                });
+
+        AlertDialog dialog = builder.create();
+
+        dialog.show();
+        dialog.getWindow().setLayout(600,800);
+        dialog.getWindow().setDimAmount(0.5f);
     }
 
 
@@ -256,7 +322,11 @@ public class MainActivity extends MyActivity implements NavigationView.OnNavigat
         item.setChecked(true);
         switch (itemId){
             case R.id.variz:
-                updateMojodi();
+                if(!SharedPrefManager.getInstance(getApplicationContext()).HasMah()){
+                    ShowDialog();
+                }
+                else
+                    updateMojodi();
                 break;
             case R.id.Vam:
                 if(twam!=0){

@@ -125,12 +125,12 @@
                 android:layout_width="130dp"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:text="مبلغ پرداخت شده:"
+                android:text="مانده اقساط:"
                 android:textAlignment="viewEnd"
                 android:textAppearance="@android:style/TextAppearance.Widget.TabWidget" />
 
             <EditText
-                android:id="@+id/MPardakhtshoda"
+                android:id="@+id/MandaAghsat"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:background="@drawable/bottom_border"

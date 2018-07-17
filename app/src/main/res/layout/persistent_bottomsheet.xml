@@ -13,6 +13,7 @@
 
     android:padding="10dp"
     app:behavior_hideable="true"
+
     app:behavior_peekHeight="0dp"
     app:layout_behavior="@string/bottom_sheet_behavior"
     tools:showIn="@layout/activity_list_vam">
@@ -42,7 +43,6 @@
                 android:textStyle="bold" />
 
         </LinearLayout>
-
         <LinearLayout
             android:id="@+id/tasviyaVam"
             android:layout_width="match_parent"

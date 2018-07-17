@@ -1,5 +1,6 @@
 package com.example.hamed.recyclerviewmysqlvolley;
 
+import android.app.Dialog;
 import android.app.SearchManager;
 import android.content.Context;
 import android.graphics.Rect;
@@ -13,6 +14,7 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.Menu;
 import android.view.MotionEvent;
 import android.view.View;
@@ -65,6 +67,9 @@ public class ListVamActivity extends MyActivity implements View.OnClickListener 
         behavior = BottomSheetBehavior.from(persistentbottomSheet);
 
 
+
+
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
@@ -98,6 +103,7 @@ public class ListVamActivity extends MyActivity implements View.OnClickListener 
                     public void onResponse(JSONArray response) {
                         progressBar.setVisibility(View.INVISIBLE);
                         int mojodi=0;int maghsat,mandavam;
+                        long mandavam1=0;
                         for(int i = 0; i < response.length(); i++){
                             VamUtils vamUtils = new VamUtils();
                             try {
@@ -107,9 +113,10 @@ public class ListVamActivity extends MyActivity implements View.OnClickListener 
                                 vamUtils.setUsername(jsonObject.getString("username"));
                                 vamUtils.setMvam(jsonObject.getInt("m_vam"));
                                 vamUtils.setTaghsat(jsonObject.getInt("t_aghsat"));
-                                vamUtils.setTpardakhtshoda(jsonObject.getInt("t_pardakhtshoda"));
+                                vamUtils.setTpardakhtshoda(jsonObject.getInt("t_aghsat")-jsonObject.getInt("t_pardakhtshoda"));
                                 maghsat=jsonObject.getInt("m_aghsat");
                                 mandavam=jsonObject.getInt("m_vam")-(maghsat*jsonObject.getInt("t_pardakhtshoda"));
+                                mandavam1=mandavam1+mandavam;
                                 vamUtils.setMandavam(mandavam);
                                 vamUtils.setMaghsat(jsonObject.getInt("m_aghsat"));
                                 vamUtils.settozihat(jsonObject.getString("tozihat"));
@@ -127,6 +134,7 @@ public class ListVamActivity extends MyActivity implements View.OnClickListener 
                             vamUtilsList.add(vamUtils);
 
                         }
+                        Toast.makeText(getApplicationContext(),mandavam1+"",Toast.LENGTH_LONG).show();
                         mAdapter.notifyDataSetChanged();
                         filteredlist.addAll(vamUtilsList);
                     }
@@ -142,10 +150,21 @@ public class ListVamActivity extends MyActivity implements View.OnClickListener 
 
     public void ShowMenu(final int position){
 
+        /*
+        View view = getLayoutInflater().inflate(R.layout.dialog_bottomsheet, null);
+        final Dialog mBottomSheetDialog = new Dialog(this, R.style.MaterialDialogSheet);
+        mBottomSheetDialog.setContentView(view);
+        mBottomSheetDialog.setCancelable(true);
+        mBottomSheetDialog.getWindow().setLayout(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+        mBottomSheetDialog.getWindow().setGravity(Gravity.BOTTOM);
+        mBottomSheetDialog.show();
+
+*/
+
         openDialog(position);
 
         //new MyBottomSheetDialogFragment().show(getSupportFragmentManager(),MyActivity.class.getSimpleName());
-        /*
+/*
         delVam.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -170,7 +189,7 @@ public class ListVamActivity extends MyActivity implements View.OnClickListener 
         } else {
             behavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
         }
-        */
+*/
     }
 
     @Override
@@ -285,16 +304,20 @@ public class ListVamActivity extends MyActivity implements View.OnClickListener 
 
     private void openDialog(final int position) {
         View view = getLayoutInflater().inflate(R.layout.dialog_bottomsheet, null);
-        dialog = new BottomSheetDialog(this);
+        dialog = new BottomSheetDialog(this,R.style.MaterialDialogSheet);
         dialog.setContentView(view);
+
         dialog.getWindow().setDimAmount(0.2f);
+
+
 
         LinearLayout delVam = (LinearLayout) view.findViewById(R.id.delVam);
         LinearLayout tasfiyaVam = (LinearLayout) view.findViewById(R.id.tasviyaVam);
         delVam.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(vamUtilsList.get(position).getTpardakhtshoda()==0){
+                if(vamUtilsList.get(position).getTpardakhtshoda()
+                        ==vamUtilsList.get(position).getTaghsat()){
                 deletevam(position);
                 dialog.dismiss();
                 }
@@ -307,6 +330,7 @@ public class ListVamActivity extends MyActivity implements View.OnClickListener 
                 dialog.dismiss();
             }
         });
+
         dialog.show();
     }
 

@@ -16,6 +16,7 @@ public class SharedPrefManager {
     private static final String SHARED_PREF_NAME="mysharedpref12";
     private static final String KEY_USERNAME="username";
     private static final String KEY_USER_ID="userid";
+    private static final String KEY_MAH="mah";
 
     private SharedPrefManager(Context context) {
         mCtx = context;
@@ -46,6 +47,32 @@ public class SharedPrefManager {
             return true;
         }
         return false;
+    }
+
+    public boolean HasMah(){
+        SharedPreferences sharedPreferences=mCtx.getSharedPreferences(SHARED_PREF_NAME,Context.MODE_PRIVATE);
+        if(sharedPreferences.getInt(KEY_MAH,-1)!=-1){
+            return true;
+        }
+        return false;
+    }
+    public boolean AddMah(int mah){
+        SharedPreferences sharedPreferences=mCtx.getSharedPreferences(SHARED_PREF_NAME,Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor=sharedPreferences.edit();
+
+
+        editor.putInt(KEY_MAH,mah);
+
+        editor.apply();
+
+        return true;
+    }
+
+    public int getMah(){
+        SharedPreferences sharedPreferences=mCtx.getSharedPreferences(SHARED_PREF_NAME,Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor=sharedPreferences.edit();
+        return sharedPreferences.getInt(KEY_MAH,-1);
+
     }
 
     public boolean logout(){

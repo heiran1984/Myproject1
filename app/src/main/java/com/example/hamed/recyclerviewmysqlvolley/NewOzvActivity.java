@@ -39,13 +39,9 @@ public class NewOzvActivity extends MyActivity implements View.OnClickListener {
         context=this;
         new  CustomActionBar(this,getSupportActionBar(),"عضو جدید");
 
-       // Typeface typeface=Typeface.createFromAsset(getAssets(),"B Nazanin.ttf");
         editTextUserName=(EditText)findViewById(R.id.editTextUsername);
-      //  editTextUserName.setTypeface(typeface);
         editTextPassword=(EditText)findViewById(R.id.editTextPassword);
-     //   editTextPassword.setTypeface(typeface);
         editTextMojodi=(EditText)findViewById(R.id.editTextMojodi);
-     //   editTextMojodi.setTypeface(typeface);
         editTextMojodi.addTextChangedListener(new NumberTextWatcher(editTextMojodi));
 
         InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);

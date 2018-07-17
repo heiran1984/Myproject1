@@ -5,22 +5,35 @@
         android:id="@+id/Add"
         android:icon="@drawable/ic_add"
         android:title="Add"
-        app:showAsAction="always"></item>
+        app:showAsAction="always">
+
+    </item>
     <item
         android:id="@+id/Edit"
         android:icon="@drawable/ic_edit"
         android:title="Edit"
-        app:showAsAction="always"></item>
+        app:showAsAction="always">
+
+    </item>
     <item android:title="Mojodi"
         android:id="@+id/Mojodi"
         android:icon="@drawable/ic_mojodi"
         app:showAsAction="always"
-        ></item>
+        >
+
+    </item>
     <item android:title="Delete"
         android:id="@+id/Delete"
         android:icon="@drawable/ic_delete"
         app:showAsAction="always"
-        ></item>
+        >
+    </item>
+    <item android:title="Variz"
+        android:id="@+id/Variz"
+        android:icon="@drawable/ic_variz"
+        app:showAsAction="always"
+        >
+    </item>
 
 
 

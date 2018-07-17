@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/all"
+        android:title="همه اعضاء"/>
+    <item android:id="@+id/hasVam"
+        android:title="وام دارند"/>
+    <item android:id="@+id/noVam"
+        android:title="وام ندارند"/>
+</menu>

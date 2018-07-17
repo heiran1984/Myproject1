@@ -45,6 +45,7 @@
         <activity
             android:name="com.example.hamed.recyclerviewmysqlvolley.MainActivity"
             android:theme="@style/AppTheme1" />
+        <activity android:name="com.example.hamed.recyclerviewmysqlvolley.VarizActivity" />
 
         <meta-data
             android:name="android.support.VERSION"

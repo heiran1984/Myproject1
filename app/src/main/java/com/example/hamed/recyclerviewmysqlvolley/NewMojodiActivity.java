@@ -44,9 +44,7 @@ public class NewMojodiActivity extends MyActivity implements View.OnClickListene
 
         editTextMahiyane=(EditText)findViewById(R.id.editTextMahiyaneh);
         editTextMahiyane.addTextChangedListener(new NumberTextWatcher(editTextMahiyane));
-       // editTextMahiyane.setTypeface(typeface);
         editTextTmah=(EditText)findViewById(R.id.editTMah);
-      //  editTextTmah.setTypeface(typeface);
         buttonSave=(Button)findViewById(R.id.buttonSave);
         buttonSave.setOnClickListener(this);
 

@@ -36,12 +36,12 @@ import java.util.Map;
 import static java.lang.Integer.parseInt;
 
 public class NewVamActivity extends MyActivity implements View.OnClickListener {
-
+    Context context;
     EditText editTextUsername;
     EditText editTextMVame;
     EditText editTextTAghsat;
     EditText editTextMAghsat;
-    EditText editTextMPardakhtshoda;
+    EditText editTextMandaAghsat;
     CheckBox next_mah;
     Button buttonNewVam;
     String mizan,mvam;
@@ -54,6 +54,7 @@ public class NewVamActivity extends MyActivity implements View.OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        context=this;
         setContentView(R.layout.activity_new_vam);
         new  CustomActionBar(this,getSupportActionBar(),"");
         next_mah=(CheckBox)findViewById(R.id.next_mah);
@@ -69,8 +70,8 @@ public class NewVamActivity extends MyActivity implements View.OnClickListener {
         editTextTAghsat.addTextChangedListener(mTextEditorWatcher);
         editTextMAghsat=(EditText)findViewById(R.id.editMaghsat);
 
-        editTextMPardakhtshoda=(EditText)findViewById(R.id.MPardakhtshoda);
-        editTextMPardakhtshoda.addTextChangedListener(new NumberTextWatcher(editTextMPardakhtshoda));
+        editTextMandaAghsat=(EditText)findViewById(R.id.MandaAghsat);
+        editTextMandaAghsat.addTextChangedListener(new NumberTextWatcher(editTextMandaAghsat));
 
 
         Bundle extras=getIntent().getExtras();
@@ -79,7 +80,6 @@ public class NewVamActivity extends MyActivity implements View.OnClickListener {
          tozihat=extras.getString("TOZIHAT");
          Codes=(ArrayList<String>)getIntent().getSerializableExtra("codes");
          jsonArray=new JSONArray(Codes);
-         //Toast.makeText(this,Codes.toString(),Toast.LENGTH_SHORT).show();
         String taghsat=editTextTAghsat.getText().toString();
         getMojodi();
         editTextUsername.setText(username);
@@ -95,8 +95,6 @@ public class NewVamActivity extends MyActivity implements View.OnClickListener {
         final String username=editTextUsername.getText().toString().trim();
         final String taghsat=editTextTAghsat.getText().toString().trim();
         final String maghsat=(editTextMAghsat.getText().toString().trim()).replace(",","");
-        final String tf="1";
-        //final String t_pardakhtshoda="0";
 
         StringRequest stringRequest=new StringRequest(Request.Method.POST,
                 Constans.URL_NEWVAM,
@@ -105,7 +103,8 @@ public class NewVamActivity extends MyActivity implements View.OnClickListener {
                     public void onResponse(String response) {
                         try {
                             JSONObject jsonObject=new JSONObject(response);
-                            Toast.makeText(getApplicationContext(),jsonObject.getString("message"),Toast.LENGTH_LONG).show();
+                            new CustomToast(context,jsonObject.getString("message"));
+
                             finish();
                          } catch (JSONException e) {
                             e.printStackTrace();
@@ -142,18 +141,18 @@ public class NewVamActivity extends MyActivity implements View.OnClickListener {
         a=Integer.parseInt((editTextMVame.getText().toString()).replace(",",""));
         b=Integer.parseInt((editTextMAghsat.getText().toString()).replace(",",""));
         c=Integer.parseInt((editTextTAghsat.getText().toString()).replace(",",""));
-        d=Integer.parseInt((editTextMPardakhtshoda.getText().toString()).replace(",",""));
+        d=Integer.parseInt((editTextMandaAghsat.getText().toString()).replace(",",""));
 
 
         //int b=Integer.parseInt(MojodiSandogh);
         if(a<=MojodiSandogh){
-           if(((b*c)==a) && (d%b==0) && (d<=a)) {
-               t_pardakhtshoda=Integer.toString(d/b);
-               Toast.makeText(getApplicationContext(),String.valueOf(next_mah.isChecked()),Toast.LENGTH_SHORT).show();
+           if(((b*c)==a)  && (d<=c)) {
+               t_pardakhtshoda=Integer.toString(c-d);
                newVam();
            }
 
-        }else{
+        }
+        else{
 
             AlertDialog.Builder builder1 = new AlertDialog.Builder(this);
             builder1.setMessage("مبلغ وام بیشتر از موجودی صندوق می باشد!");
@@ -186,6 +185,7 @@ public class NewVamActivity extends MyActivity implements View.OnClickListener {
                             editTextMVame.addTextChangedListener(mTextEditorWatcher1);
                             editTextTAghsat.setText(formatter.format(taghsat));
                             editTextMAghsat.setText(formatter.format(vam/taghsat));
+                            editTextMandaAghsat.setText(formatter.format(taghsat));
                             MojodiSandogh=obj.getLong("smojodi");
                             actionbarMojodi();
 
