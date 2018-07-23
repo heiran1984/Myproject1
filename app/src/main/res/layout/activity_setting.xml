@@ -101,6 +101,15 @@
             android:textColor="@color/cardview_light_background"
             android:textSize="24sp" />
     </LinearLayout>
+    <ProgressBar
+        android:id="@+id/progressbar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:minHeight="50dp"
+        android:minWidth="50dp" />
+
 </RelativeLayout>
 
 

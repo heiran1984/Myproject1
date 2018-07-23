@@ -6,11 +6,14 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.content.ContextCompat;
+import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AlertDialog;
@@ -21,6 +24,9 @@ import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.WindowManager;
+import android.widget.DatePicker;
+import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -39,7 +45,8 @@ import org.json.JSONObject;
 import java.text.DecimalFormat;
 
 public class MainActivity extends MyActivity implements NavigationView.OnNavigationItemSelectedListener {
-    TextView Tarikh,Mojodi,TOzv,TWam,MojodiOzv;
+    TextView Tarikh,Mojodi,TOzv,TWam,MojodiOzv,Connection1,user;
+    LinearLayout Connection2,linearLayout;
     DecimalFormat formatter=new DecimalFormat("#,###,###");
     ProgressBar progressBar;
     private DrawerLayout mDrawerLayout;
@@ -71,16 +78,19 @@ public class MainActivity extends MyActivity implements NavigationView.OnNavigat
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        if(Build.VERSION.SDK_INT>=19){
+            getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+        }
+        else{
+            getWindow().clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+        }
+
 
         typeface=Typeface.createFromAsset(getAssets(),"fonts/IRANSansMobile.ttf");
-
-
-
-
         context=this;
         Toolbar toolbar=(Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+        getSupportActionBar().setTitle("صندوق قرض الحسنه حضرت مهدی (عج)");
         mDrawerLayout=(DrawerLayout)findViewById(R.id.drawer_layout);
         navigationView = (NavigationView) findViewById(R.id.nav_view);
         ActionBarDrawerToggle mDrawerToggle = new ActionBarDrawerToggle(
@@ -121,13 +131,25 @@ public class MainActivity extends MyActivity implements NavigationView.OnNavigat
         Tarikh=(TextView) findViewById(R.id.Tarikh);
         Mojodi=(TextView)findViewById(R.id.Mojodi);
         MojodiOzv=(TextView)findViewById(R.id.MojodiOzv);
+        Connection1=(TextView)findViewById(R.id.Connection1);
+        Connection2=(LinearLayout)findViewById(R.id.Connection2);
+        linearLayout=(LinearLayout)findViewById(R.id.linearLayout);
+        View headerView=navigationView.getHeaderView(0);
+        user=(TextView)headerView.findViewById(R.id.user);
+        user.setText(SharedPrefManager.getInstance(getApplicationContext()).getUsername().replaceAll("\\d", ""));
+        Connection1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Connection2.setVisibility(View.GONE);
+                progressBar.setVisibility(View.VISIBLE);
+                delay();
+                //onStart();
+            }
+        });
 
         TOzv=(TextView)findViewById(R.id.TOzv);
         TWam=(TextView)findViewById(R.id.TٌWam);
-     //   Tarikh.setTypeface(typeface);
-       // Mojodi.setTypeface(typeface);
-      //  TOzv.setTypeface(typeface);
-      //  TWam.setTypeface(typeface);
+
 
         /*if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             getWindow().setNavigationBarColor(ContextCompat.getColor(this, R.color.colorAccent));
@@ -292,27 +314,28 @@ public class MainActivity extends MyActivity implements NavigationView.OnNavigat
     @Override
     protected void onStart() {
         super.onStart();
-        getMojodi();
+        if(checkNetworkConnection(this)){
+            Connection2.setVisibility(View.GONE);
+            linearLayout.setVisibility(View.VISIBLE);
+            progressBar.setVisibility(View.VISIBLE);
+            getMojodi();
+
+        }
+        else {
+            Connection2.setVisibility(View.VISIBLE);
+            progressBar.setVisibility(View.GONE);
+            linearLayout.setVisibility(View.GONE);
+
+        }
     }
 
     @Override
-    protected void onStop() {
-        super.onStop();
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
+    public void onBackPressed() {
+        if(mDrawerLayout.isDrawerOpen(GravityCompat.START)){
+            mDrawerLayout.closeDrawer(Gravity.RIGHT);
+        }
+        else
+        super.onBackPressed();
     }
 
     @Override
@@ -353,5 +376,34 @@ public class MainActivity extends MyActivity implements NavigationView.OnNavigat
         }
         mDrawerLayout.closeDrawers();
         return false;
+    }
+
+    public boolean checkNetworkConnection(Context context){
+        ConnectivityManager connectivityManager=(ConnectivityManager)context.getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo networkInfo=connectivityManager.getActiveNetworkInfo();
+        return (networkInfo!=null && networkInfo.isConnected());
+
+    }
+
+    public void delay(){
+        Thread mySplash=new Thread(){
+            @Override
+            public void run() {
+                try {
+                    sleep(300);
+                    runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            onStart();
+                        }
+                    });
+
+
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        };
+        mySplash.start();
     }
 }

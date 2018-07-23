@@ -1908,6 +1908,8 @@
     </style><style name="MaterialDialogSheetAnimation">
         <item name="android:windowEnterAnimation">@anim/popup_show</item>
         <item name="android:windowExitAnimation">@anim/popup_hide</item>
+    </style><style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">14sp</item>
     </style></file></source><source path="G:\1397-02-04\RecyclerViewMysqlVolley\app\build\generated\res\rs\debug"/><source path="G:\1397-02-04\RecyclerViewMysqlVolley\app\build\generated\res\resValues\debug"/></dataSet><dataSet config="debug$Generated" generated="true"><source path="G:\1397-02-04\RecyclerViewMysqlVolley\app\src\debug\res"/></dataSet><dataSet config="debug" generated-set="debug$Generated"><source path="G:\1397-02-04\RecyclerViewMysqlVolley\app\src\debug\res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="AlertDialog"><attr name="android:layout"/><attr format="reference" name="buttonPanelSideLayout"/><attr format="reference" name="listLayout"/><attr format="reference" name="multiChoiceItemLayout"/><attr format="reference" name="singleChoiceItemLayout"/><attr format="reference" name="listItemLayout"/><attr format="boolean" name="showTitle"/></declare-styleable><declare-styleable name="AppCompatSeekBar"><attr name="android:thumb"/><attr format="reference" name="tickMark"/><attr format="color" name="tickMarkTint"/><attr name="tickMarkTintMode">
             
             <enum name="src_over" value="3"/>

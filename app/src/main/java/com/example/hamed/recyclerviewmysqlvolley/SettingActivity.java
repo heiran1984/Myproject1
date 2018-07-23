@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
@@ -28,11 +29,14 @@ public class SettingActivity extends MyActivity implements View.OnClickListener 
     Button buttonSave;
     EditText SandoghName,Mahiyane,taghsat,mizan;
     DecimalFormat formatter=new DecimalFormat("#,###,###");
+    ProgressBar progressBar;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_setting);
+        new  CustomActionBar(this,getSupportActionBar(),"تنظیمات");
 
         SandoghName=(EditText)findViewById(R.id.SandoghName);
        // SandoghName.setTypeface(typeface);
@@ -47,6 +51,8 @@ public class SettingActivity extends MyActivity implements View.OnClickListener 
         buttonSave=(Button)findViewById(R.id.buttonSave);
         //buttonSave.setTypeface(typeface);
         buttonSave.setOnClickListener(this);
+        progressBar=(ProgressBar)findViewById(R.id.progressbar1);
+
         SandoghInfo();
     }
 
@@ -63,6 +69,7 @@ public class SettingActivity extends MyActivity implements View.OnClickListener 
                     @Override
                     public void onResponse(String response) {
                         try {
+                            progressBar.setVisibility(View.INVISIBLE);
                             JSONObject obj=new JSONObject(response);
                             SandoghName.setText(obj.getString("name"));
                             Mahiyane.setText(formatter.format(obj.getInt("value_mahiyane")));

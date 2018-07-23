@@ -19,6 +19,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.CheckBox;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -476,6 +477,11 @@ public class ListUserActivity extends MyActivity implements View.OnLongClickList
        // counter.setVisibility(View.VISIBLE);
         mAdapter.notifyDataSetChanged();
         //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        View view = this.getCurrentFocus();
+        if (view != null) {
+            InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
+            imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
+        }
         return true;
     }
 

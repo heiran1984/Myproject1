@@ -8,11 +8,5 @@
         android:title="Search"
         app:showAsAction="always"
         app:actionViewClass="android.support.v7.widget.SearchView"/>
-    <item android:id="@+id/all"
-        android:title="همه اعضاء"/>
-    <item android:id="@+id/hasVam"
-        android:title="وام دارند"/>
-    <item android:id="@+id/noVam"
-        android:title="وام ندارند"/>
 
 </menu>

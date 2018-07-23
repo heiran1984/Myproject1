@@ -48,6 +48,10 @@
         <item name="android:windowExitAnimation">@anim/popup_hide</item>
     </style>
 
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">14sp</item>
+    </style>
+
 
 
 </resources>
