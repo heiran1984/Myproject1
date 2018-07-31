@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hamed.recyclerviewmysqlvolley.MainActivity"
+    android:layoutDirection="rtl"
+    android:textDirection="rtl"
+    android:padding="10dp"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/buttonNewVam"
+        >
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="رمز قدیم:"
+                    android:textAlignment="viewEnd"
+                    android:textAppearance="@android:style/TextAppearance.Widget.TabWidget" />
+
+                <EditText
+                    android:id="@+id/oldPass"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bottom_border"
+                    android:textAlignment="textStart"
+                    android:inputType="textPassword"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="رمز جدید:"
+                    android:textAlignment="viewEnd"
+                    android:textAppearance="@android:style/TextAppearance.Widget.TabWidget" />
+
+                <EditText
+                    android:id="@+id/newPass"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bottom_border"
+                    android:inputType="textPassword"
+                    android:maxLength="15"
+                    android:textAlignment="textStart" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+
+                    android:text="تکرار رمز :"
+                    android:textAlignment="viewEnd"
+                    android:textAppearance="@android:style/TextAppearance.Widget.TabWidget" />
+
+                <EditText
+                    android:id="@+id/newpass1"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bottom_border"
+                    android:inputType="textPassword"
+                    android:textAlignment="textStart" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/curve_shap"
+        android:text="تایید"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="20sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        />
+
+
+</RelativeLayout>
+
+
+
+
+
+

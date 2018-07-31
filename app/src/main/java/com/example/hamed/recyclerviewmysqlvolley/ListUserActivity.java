@@ -361,6 +361,11 @@ public class ListUserActivity extends MyActivity implements View.OnLongClickList
         if(is_in_action_mode){
             clearActionMode();
         }
+
+
+        else if(!searchView.isIconified()){
+            searchView.setIconified(true);
+        }
         else{
             super.onBackPressed();
         }

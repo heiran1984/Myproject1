@@ -368,6 +368,10 @@ public class MainActivity extends MyActivity implements NavigationView.OnNavigat
                 intent=new Intent(this,ListUserActivity.class);
                 startActivity(intent);
                 break;
+            case R.id.ChanePass:
+                intent=new Intent(this,ChangPassActivity.class);
+                startActivity(intent);
+                break;
             case R.id.LogOut:
                 SharedPrefManager.getInstance(this).logout();
                 startActivity(new Intent(this,LoginActivity.class));

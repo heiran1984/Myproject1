@@ -53,5 +53,10 @@
     </style>
 
 
+    <style name="MyTextInputLayout" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorBack</item>
+        <item name="android:textSize">44sp</item>
+    </style>
+
 
 </resources>

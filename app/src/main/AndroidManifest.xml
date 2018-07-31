@@ -38,7 +38,8 @@
         <activity
             android:name=".MainActivity"
             android:theme="@style/AppTheme1" />
-        <activity android:name=".VarizActivity"></activity>
+        <activity android:name=".VarizActivity" />
+        <activity android:name=".ChangPassActivity"></activity>
     </application>
 
 </manifest>

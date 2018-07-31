@@ -21,6 +21,7 @@ public class Constans {
     public static final String URL_DELVAM=ROOT_URL+"deleteVam.php";
     public static final String URL_TASFIYAVAM=ROOT_URL+"tasfiyaVam.php";
     public static final String URL_VARIZ=ROOT_URL+"variz.php";
+    public static final String URL_CHANGE_PASS=ROOT_URL+"changePass.php";
 
 
 

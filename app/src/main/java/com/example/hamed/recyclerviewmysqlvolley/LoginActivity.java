@@ -22,7 +22,7 @@ import org.json.JSONObject;
 import java.util.HashMap;
 import java.util.Map;
 
-public class LoginActivity extends AppCompatActivity implements View.OnClickListener{
+public class LoginActivity extends MyActivity implements View.OnClickListener{
 
     private EditText editTextUsername,editTextPassword;
     private Button buttonLogin;
@@ -76,7 +76,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                                 SharedPrefManager.getInstance(getApplicationContext())
                                         .userLogin(
                                                 obj.getInt("id"),
-                                                obj.getString("username")
+                                                obj.getString("username"),
+                                                password
 
                                         );
                                 startActivity(new Intent(getApplicationContext(),MainActivity.class));

@@ -1,9 +1,10 @@
 -- Merging decision tree log ---
 manifest
-ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:2:1-44:12
+ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:2:1-45:12
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\10628a5f0bcb0495233e00da7522be02\AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:design:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\design-25.4.0.aar\cf2f4af592b8845da4e7c4a51d376344\AndroidManifest.xml:17:1-31:12
 MERGED from [uk.co.chrisjenx:calligraphy:2.3.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\calligraphy-2.3.0.aar\000431f121252bf2b2d508592cae5045\AndroidManifest.xml:2:1-13:12
 MERGED from [com.android.support:appcompat-v7:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.4.0.aar\0d6a6edf08316bb28a65450f36cfdf3a\AndroidManifest.xml:17:1-31:12
@@ -19,20 +20,20 @@ MERGED from [com.android.support:support-media-compat:25.4.0] C:\Users\Hamed\.gr
 MERGED from [com.android.support:support-core-utils:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.4.0.aar\f4d93eb56b8dee1f2bda15df714c53f1\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-vector-drawable:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.4.0.aar\b73876d5c3abc80876e1b43c114748dd\AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:support-compat:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\support-compat-25.4.0.aar\3781c3d62af23d97975ebbbf71582774\AndroidManifest.xml:17:1-31:12
-INJECTED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:2:1-44:12
+INJECTED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:2:1-45:12
 	package
 		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:3:5-56
 		INJECTED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml
 		INJECTED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml
-		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:2:1-44:12
+		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:2:1-45:12
 		INJECTED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml
-		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:2:1-44:12
+		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:2:1-45:12
 		INJECTED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:2:11-69
@@ -45,7 +46,9 @@ ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xm
 	android:name
 		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:6:22-64
 application
-ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:8:5-42:19
+ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:8:5-43:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\10628a5f0bcb0495233e00da7522be02\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\10628a5f0bcb0495233e00da7522be02\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:design:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\design-25.4.0.aar\cf2f4af592b8845da4e7c4a51d376344\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:design:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\design-25.4.0.aar\cf2f4af592b8845da4e7c4a51d376344\AndroidManifest.xml:25:5-29:19
 MERGED from [uk.co.chrisjenx:calligraphy:2.3.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\calligraphy-2.3.0.aar\000431f121252bf2b2d508592cae5045\AndroidManifest.xml:11:5-20
@@ -147,13 +150,19 @@ ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xm
 	android:name
 		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:39:13-41
 activity#com.example.hamed.recyclerviewmysqlvolley.VarizActivity
-ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:41:9-60
+ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:41:9-51
 	android:name
 		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:41:19-48
+activity#com.example.hamed.recyclerviewmysqlvolley.ChangPassActivity
+ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:42:9-64
+	android:name
+		ADDED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml:42:19-52
 uses-sdk
 INJECTED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml
 INJECTED from G:\1397-02-04\RecyclerViewMysqlVolley\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\10628a5f0bcb0495233e00da7522be02\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\10628a5f0bcb0495233e00da7522be02\AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support:design:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\design-25.4.0.aar\cf2f4af592b8845da4e7c4a51d376344\AndroidManifest.xml:21:5-23:62
 MERGED from [com.android.support:design:25.4.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\design-25.4.0.aar\cf2f4af592b8845da4e7c4a51d376344\AndroidManifest.xml:21:5-23:62
 MERGED from [uk.co.chrisjenx:calligraphy:2.3.0] C:\Users\Hamed\.gradle\caches\transforms-1\files-1.1\calligraphy-2.3.0.aar\000431f121252bf2b2d508592cae5045\AndroidManifest.xml:7:5-9:41

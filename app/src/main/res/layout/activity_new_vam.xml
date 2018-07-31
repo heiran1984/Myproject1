@@ -23,6 +23,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -31,7 +32,7 @@
 
             <TextView
                 android:id="@+id/textView"
-                android:layout_width="130dp"
+                android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:text="وام گیرنده:"
@@ -53,7 +54,7 @@
             android:paddingBottom="5dp">
 
             <TextView
-                android:layout_width="130dp"
+                android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:text="مبلغ وام:"
@@ -76,7 +77,7 @@
             android:paddingBottom="5dp">
 
             <TextView
-                android:layout_width="130dp"
+                android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:gravity="center"
 
@@ -100,7 +101,7 @@
             android:paddingBottom="5dp">
 
             <TextView
-                android:layout_width="130dp"
+                android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:text="مبلغ هر قسط:"
@@ -122,7 +123,7 @@
             android:paddingBottom="5dp">
 
             <TextView
-                android:layout_width="130dp"
+                android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:text="مانده اقساط:"
